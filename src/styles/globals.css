@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   :root {
+      --radius: 0.5rem;
+      --font-primary: 'Raleway', sans-serif;
+      --font-secondary: 'Montserrat', sans-serif;
+   }
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: var(--font-primary);
+}
+
+body * {
+   box-sizing: inherit;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+body *:after,
+body *:before {
+   padding: 0;
+   margin: 0;
+   box-sizing: inherit;
+}
+
+* {
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   scroll-behavior: smooth;
+   overflow-x: hidden;
+   -webkit-overflow-scrolling: touch;
+}
+
+body,
+input,
+textarea {
+   input[type='number']::-webkit-inner-spin-,
+   input[type='number']::-webkit-outer-spin- {
+      -webkit-appearance: none;
+      margin: 0;
+   }
+
+   input[type='number'] {
+      -moz-appearance: textfield !important;
+      appearance: textfield !important;
+   }
+}
+
+input:-webkit-autofill::first-line {
+   background-color: transparent;
+}
+
+input:-webkit-autofill {
+   -webkit-box-shadow: none;
+   -webkit-font-smoothing: antialiased;
+   -webkit-background-clip: text;
+}
+
+input:-webkit-autofill {
+   -webkit-box-shadow: 0 0 0 0 transparent inset;
+   -webkit-text-fill-color: black;
+}
+
+input {
+   caret-color: black;
+}
+
+::-webkit-scrollbar {
+   width: 0px;
+   z-index: 1;
+
+   &-thumb {
+      cursor: pointer;
+      border-radius: 8px;
+      background: #c5c5c5;
+   }
+}
+
+.animate-green {
+   animation: green-pulse 2s infinite;
+}
+
+@keyframes green-pulse {
+   0% {
+      box-shadow: 0 0 0 0 rgba(11, 169, 91, 0.25);
+   }
+
+   70% {
+      box-shadow: 0 0 0 8px rgba(11, 169, 91, 0);
+   }
+}
+
+@layer components {
+   .loader {
+      border-top: 2px solid currentColor;
+      border-left: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      border-right: 2px solid transparent;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+   }
+
+   .animation-spin {
+      animation: spin 0.75s linear infinite;
+   }
+
+   @keyframes spin {
+      from {
+         transform: translate(-50%, -50%) rotate(0deg);
+      }
+      to {
+         transform: translate(-50%, -50%) rotate(360deg);
+      }
+   }
+}
