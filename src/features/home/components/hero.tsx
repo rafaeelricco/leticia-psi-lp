@@ -46,7 +46,7 @@ export const Hero: React.FC = () => {
                fill
                priority
                quality={100}
-               className="absolute h-svh w-screen object-top -z-10 object-cover"
+               className="absolute h-svh w-screen -z-10 object-cover md:object-top object-[75%_center]"
             />
          </div>
       </React.Fragment>
