@@ -8,7 +8,6 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import { cn } from '@/lib/utils'
 
-import Link from 'next/link'
 import React from 'react'
 
 const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
@@ -62,12 +61,12 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
       <React.Fragment>
          <nav
             className={cn(
-               'fixed z-50 backdrop-blur-sm py-4 px-8 grid container rounded-3xl border-[rgba(255,255,255,0.28)] border [background:rgba(103,120,85,0.6)_0_0_/_100%,rgba(150,143,135,0.16)_0_0_/_100%] [background-blend-mode:multiply] top-12 left-1/2 -translate-x-1/2',
+               'fixed z-50 backdrop-blur-sm w-[calc(100%-6vw)] md:w-auto py-4 px-4 grid rounded-3xl border-[rgba(255,255,255,0.28)] border [background:rgba(103,120,85,0.6)_0_0_/_100%,rgba(150,143,135,0.16)_0_0_/_100%] [background-blend-mode:multiply] top-12 left-1/2 -translate-x-1/2 transition-all duration-300 overflow-hidden',
                className
             )}
          >
             <div className="flex items-center justify-between w-full container px-4 md:px-0 gap-12">
-               <Logo className="w-fit h-[36px]" />
+               <Logo className="w-fit h-[28px] sm:h-[36px]" />
                <div className="hidden grid-flow-col items-center gap-6 md:grid">
                   {items.map((item, index) => (
                      <React.Fragment key={item.id + index}>
@@ -112,29 +111,35 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
                   <Sheet>
                      <SheetTrigger asChild>
                         <div>
-                           <HamburgerIcon className="bg-transparent" />
+                           <HamburgerIcon className="bg-green rounded-lg" />
                            <span className="sr-only">toggle-menu</span>
                         </div>
                      </SheetTrigger>
-                     <SheetContent side="left" className="sm:max-w-xs">
-                        <nav className="grid gap-6 text-lg font-medium">
-                           <Link
-                              href="#"
-                              className="bg-primary text-primary-foreground group flex h-10 w-10 shrink-0 items-center justify-center gap-2 rounded-full text-lg font-semibold md:text-base"
-                              prefetch={false}
-                           >
-                              <span className="sr-only">© 2024 Ricco Ltda. All rights reserved.</span>
-                           </Link>
-                           {items.map((item, index) => (
-                              <Link
-                                 key={item.id + index}
-                                 href={item.link}
-                                 className="text-muted-foreground flex items-center gap-4 px-2.5 hover:text-foreground hover:underline"
-                                 prefetch={false}
-                              >
-                                 {item.label}
-                              </Link>
-                           ))}
+                     <SheetContent side="right" className="sm:max-w-xs border-none">
+                        <nav className="grid gap-8 mt-8 text-lg">
+                           <Logo className="w-fit h-[36px]" />
+                           <div className="grid gap-4">
+                              {items.map((item, index) => (
+                                 <React.Fragment key={item.id + index}>
+                                    <div className="flex flex-col">
+                                       <button
+                                          onClick={() => handleScrollTo(item.scrollTo)}
+                                          className="text-green hover:text-green/80 text-left font-gadugi font-medium hover:underline"
+                                          disabled={item.disabled}
+                                       >
+                                          {item.label}
+                                       </button>
+                                    </div>
+                                    {index < items.length - 1 && <Separator className="bg-white/20" />}
+                                 </React.Fragment>
+                              ))}
+                           </div>
+                           <Button variant="default" className="w-full mt-4">
+                              <span className="flex items-center gap-2">
+                                 <WhatsAppIcon className="w-4 h-4" />
+                                 <span className="text-base">Agendamentos</span>
+                              </span>
+                           </Button>
                         </nav>
                      </SheetContent>
                   </Sheet>
@@ -151,7 +156,7 @@ const HamburgerIcon: React.FC<{ className?: string }> = ({ className }) => {
          <button className="relative group">
             <div
                className={cn(
-                  'relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-slate-700 ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md',
+                  'relative flex overflow-hidden items-center justify-center rounded-full p-2.5 transform transition-all bg-slate-700 ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md',
                   className
                )}
             >

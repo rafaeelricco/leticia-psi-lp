@@ -7,9 +7,9 @@ import React from 'react'
 
 export const HomePageComponent: React.FC = () => {
    return (
-      <React.Suspense>
+      <React.Fragment>
          <Header />
          <Hero />
-      </React.Suspense>
+      </React.Fragment>
    )
 }
