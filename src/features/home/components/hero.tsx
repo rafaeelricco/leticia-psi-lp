@@ -49,6 +49,13 @@ export const Hero: React.FC = () => {
                className="absolute h-svh w-screen -z-10 object-cover md:object-top object-[75%_center]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent -z-[5] md:hidden" />
+            <Image
+               src="/assets/whatsapp-icon.png"
+               alt="WhatsApp"
+               width={48}
+               height={48}
+               className="fixed bottom-6 right-6 z-50 md:hidden cursor-pointer"
+            />
          </div>
       </React.Fragment>
    )
