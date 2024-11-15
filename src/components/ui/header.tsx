@@ -3,12 +3,12 @@
 import { Logo } from '@/components/icons/header'
 import { WhatsAppIcon } from '@/components/icons/hero'
 import { Button } from '@/components/ui/button'
-import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerTrigger } from '@/components/ui/drawer'
 import { Separator } from '@/components/ui/separator'
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import { cn } from '@/lib/utils'
-import { PanelLeftIcon } from 'lucide-react'
 
+import Link from 'next/link'
 import React from 'react'
 
 const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
@@ -108,58 +108,61 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
                      <span className="text-base">Agendamentos</span>
                   </span>
                </Button>
-               <div className="md:hidden">
-                  <Drawer direction="right" shouldScaleBackground={false}>
-                     <DrawerTrigger asChild>
-                        <Button size="icon" variant="outline">
-                           <PanelLeftIcon className="h-5 w-5" />
+               <div className="lg:hidden">
+                  <Sheet>
+                     <SheetTrigger asChild>
+                        <div>
+                           <HamburgerIcon className="bg-transparent" />
                            <span className="sr-only">toggle-menu</span>
-                        </Button>
-                     </DrawerTrigger>
-                     <DrawerContent className="max-w-xs fixed w-[40rem] h-screen overflow-y-scroll overflow-x-hidden flex flex-col top-0 right-0 z-[998] py-12 2xl:py-14 px-12 focus:outline-none space-y-8">
-                        <DrawerHeader className="p-0">
-                           <DrawerTitle className="p-0">
-                              <Logo className="w-[197px] h-[28px]" />
-                           </DrawerTitle>
-                        </DrawerHeader>
-                        <div className="grid gap-8">
-                           {/* <SelectLanguage className="w-fit" /> */}
-                           <div className="grid gap-6">
-                              {items.map((item, index) => (
-                                 <div key={item.id + index}>
-                                    <TooltipProvider>
-                                       <Tooltip>
-                                          <TooltipTrigger asChild>
-                                             <div>
-                                                {item.disabled ? (
-                                                   <p className="font-sf-pro-display text-green-default font-semibold opacity-50">
-                                                      {item.label}
-                                                   </p>
-                                                ) : (
-                                                   <button
-                                                      onClick={() => handleScrollTo(item.scrollTo)}
-                                                      className="font-sf-pro-display text-green-default hover:text-green-default/80 hover:underline font-semibold"
-                                                   >
-                                                      {item.label}
-                                                   </button>
-                                                )}
-                                             </div>
-                                          </TooltipTrigger>
-                                          <TooltipContent side="right">
-                                             <p className="font-sf-pro-display text-base font-medium">{item.tooltip}</p>
-                                          </TooltipContent>
-                                       </Tooltip>
-                                    </TooltipProvider>
-                                 </div>
-                              ))}
-                           </div>
                         </div>
-                     </DrawerContent>
-                  </Drawer>
+                     </SheetTrigger>
+                     <SheetContent side="left" className="sm:max-w-xs">
+                        <nav className="grid gap-6 text-lg font-medium">
+                           <Link
+                              href="#"
+                              className="bg-primary text-primary-foreground group flex h-10 w-10 shrink-0 items-center justify-center gap-2 rounded-full text-lg font-semibold md:text-base"
+                              prefetch={false}
+                           >
+                              <span className="sr-only">© 2024 Ricco Ltda. All rights reserved.</span>
+                           </Link>
+                           {items.map((item, index) => (
+                              <Link
+                                 key={item.id + index}
+                                 href={item.link}
+                                 className="text-muted-foreground flex items-center gap-4 px-2.5 hover:text-foreground hover:underline"
+                                 prefetch={false}
+                              >
+                                 {item.label}
+                              </Link>
+                           ))}
+                        </nav>
+                     </SheetContent>
+                  </Sheet>
                </div>
             </div>
          </nav>
       </React.Fragment>
+   )
+}
+
+const HamburgerIcon: React.FC<{ className?: string }> = ({ className }) => {
+   return (
+      <div>
+         <button className="relative group">
+            <div
+               className={cn(
+                  'relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-slate-700 ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md',
+                  className
+               )}
+            >
+               <div className="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
+                  <div className="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:rotate-[42deg]"></div>
+                  <div className="bg-white h-[2px] w-1/2 rounded transform transition-all duration-300 group-focus:-translate-x-10"></div>
+                  <div className="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:-rotate-[42deg]"></div>
+               </div>
+            </div>
+         </button>
+      </div>
    )
 }
 

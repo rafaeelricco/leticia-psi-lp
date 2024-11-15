@@ -32,14 +32,19 @@ const DrawerContent = React.forwardRef<
    React.ElementRef<typeof DrawerPrimitive.Content>,
    React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Content> & {
       showSnapPoint?: boolean
+      direction?: 'left' | 'right'
    }
->(({ className, children, showSnapPoint = false, ...props }, ref) => (
+>(({ className, children, showSnapPoint = false, direction = 'right', ...props }, ref) => (
    <DrawerPortal>
       <DrawerOverlay />
       <DrawerPrimitive.Content
          ref={ref}
          className={cn(
-            'bg-white fixed w-[40rem] h-screen overflow-y-scroll overflow-x-hidden flex flex-col top-0 right-0 z-[1000] py-12 2xl:py-14 px-12 focus:outline-none',
+            'bg-white fixed w-[40rem] h-screen overflow-y-scroll overflow-x-hidden flex flex-col z-[1000] py-12 2xl:py-14 px-12 focus:outline-none',
+            {
+               'right-0': direction === 'right',
+               'left-0': direction === 'left'
+            },
             className
          )}
          {...props}
