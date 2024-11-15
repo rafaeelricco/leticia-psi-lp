@@ -3,6 +3,7 @@
 import { WhatsAppIcon } from '@/src/components/icons/hero'
 import { Button } from '@/src/components/ui/button'
 
+import HeroImage from '@/public/assets/leticia-psi-hero.png'
 import Image from 'next/image'
 import React from 'react'
 
@@ -18,7 +19,7 @@ export const Hero: React.FC = () => {
                         <br className="hidden md:block" />
                         <span className="flex items-center gap-4 justify-center md:justify-start">
                            ato de
-                           <span className="font-retro-signature lowercase h-[42px] md:h-[60px] inline-flex items-center text-[100px] md:text-[140px]">
+                           <span className="font-retro-signature lowercase h-[33px] md:h-[60px] inline-flex items-center text-[100px] md:text-[140px]">
                               coragem,
                            </span>
                         </span>
@@ -41,11 +42,12 @@ export const Hero: React.FC = () => {
                </div>
             </div>
             <Image
-               src="/assets/leticia-psi-hero.png"
+               src={HeroImage}
                alt="Floresta hero"
                fill
                priority
                quality={100}
+               placeholder="blur"
                className="absolute h-svh w-screen -z-10 object-cover md:object-top object-[75%_center]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent -z-[5] md:hidden" />
