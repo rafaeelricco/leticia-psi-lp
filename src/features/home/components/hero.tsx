@@ -11,7 +11,7 @@ export const Hero: React.FC = () => {
    return (
       <React.Fragment>
          <div className="min-h-svh flex flex-col justify-between relative" id="hero">
-            <div className="flex-1 flex items-end md:items-center container px-4 pb-24 md:pb-0 md:px-0">
+            <div className="flex-1 flex items-end md:items-center container px-4 pb-12 md:pb-0 md:px-0">
                <div className="flex flex-col gap-6 w-full">
                   <div className="flex flex-col gap-2">
                      <h1 className="text-3xl text-center md:text-left text-white md:text-5xl lg:text-6xl font-thin font-forum uppercase tracking-tight">
@@ -27,8 +27,11 @@ export const Hero: React.FC = () => {
                         <br className="hidden md:block" />
                         de fraqueza.
                      </h1>
-                     <p className="text-sm sm:text-base lg:text-lg font-medium text-gray-paragraph text-center md:text-left text-white">
+                     <p className="text-sm hidden md:block sm:text-base lg:text-lg font-medium text-gray-paragraph text-center md:text-left text-white">
                         Dê um passo na direção da vida que você deseja viver!
+                     </p>
+                     <p className="text-sm block md:hidden sm:text-base lg:text-lg font-medium text-gray-paragraph text-center md:text-left text-white">
+                        Cuide de você com quem entende e acolhe.
                      </p>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-6">
@@ -56,7 +59,7 @@ export const Hero: React.FC = () => {
                alt="WhatsApp"
                width={48}
                height={48}
-               className="fixed bottom-6 right-6 z-50 md:hidden cursor-pointer"
+               className="fixed bottom-4 right-4 z-50 md:hidden cursor-pointer"
             />
          </div>
       </React.Fragment>
