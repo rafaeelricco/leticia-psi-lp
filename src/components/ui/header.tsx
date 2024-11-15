@@ -66,7 +66,7 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
             )}
          >
             <div className="flex items-center justify-between w-full container sm:px-4 md:px-0 gap-4 sm:gap-10">
-               <Logo className="w-fit h-[32px] sm:h-[36px]" />
+               <Logo className="h-[32px] sm:h-[36px]" />
                <div className="hidden md:grid grid-flow-col items-center gap-4 md:gap-6">
                   {items.map((item, index) => (
                      <React.Fragment key={item.id + index}>
@@ -115,9 +115,8 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
                            <span className="sr-only">toggle-menu</span>
                         </div>
                      </SheetTrigger>
-                     <SheetContent side="right" className="sm:max-w-xs border-none">
+                     <SheetContent side="right" className="border-none">
                         <nav className="grid gap-8 mt-8 text-lg">
-                           <Logo className="w-fit h-[36px]" />
                            <div className="grid gap-4">
                               {items.map((item, index) => (
                                  <React.Fragment key={item.id + index}>
