@@ -31,7 +31,7 @@ export const Hero: React.FC = () => {
                      </p>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-6">
-                     <Button variant="outline" className="w-full md:w-auto">
+                     <Button variant="outline" className="w-[64%] mx-auto md:w-auto md:mx-0">
                         <span className="flex items-center gap-2">
                            <WhatsAppIcon className="w-4 h-4" />
                            <span className="text-base">Agendamentos</span>
@@ -47,14 +47,6 @@ export const Hero: React.FC = () => {
                priority
                quality={100}
                className="absolute h-svh w-screen -z-10 object-cover md:object-top object-[75%_center]"
-               // object-[0%_0%]     // ↖️ Topo esquerdo
-               // object-[50%_0%]    // ⬆️ Topo centro
-               // object-[100%_0%]   // ↗️ Topo direito
-               // object-[0%_50%]    // ⬅️ Centro esquerdo
-               // object-[100%_50%]  // ➡️ Centro direito
-               // object-[0%_100%]   // ↙️ Base esquerda
-               // object-[50%_100%]  // ⬇️ Base centro
-               // object-[100%_100%] // ↘️ Base direita
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent -z-[5] md:hidden" />
          </div>
