@@ -61,13 +61,13 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
       <React.Fragment>
          <nav
             className={cn(
-               'fixed z-50 backdrop-blur-sm w-[calc(100%-6vw)] md:w-auto py-4 px-4 grid rounded-3xl border-[rgba(255,255,255,0.28)] border [background:rgba(103,120,85,0.6)_0_0_/_100%,rgba(150,143,135,0.16)_0_0_/_100%] [background-blend-mode:multiply] top-12 left-1/2 -translate-x-1/2 transition-all duration-300 overflow-hidden',
+               'fixed z-50 backdrop-blur-sm w-[calc(100%-2rem)] md:w-auto py-4 md:px-4 grid rounded-3xl border-[rgba(255,255,255,0.28)] border [background:rgba(103,120,85,0.6)_0_0_/_100%,rgba(150,143,135,0.16)_0_0_/_100%] [background-blend-mode:multiply] top-12 left-1/2 -translate-x-1/2 transition-all duration-300 overflow-hidden',
                className
             )}
          >
-            <div className="flex items-center justify-between w-full container px-4 md:px-0 gap-12">
-               <Logo className="w-fit h-[28px] sm:h-[36px]" />
-               <div className="hidden grid-flow-col items-center gap-6 md:grid">
+            <div className="flex items-center justify-between w-full container sm:px-4 md:px-0 gap-4 sm:gap-10">
+               <Logo className="w-fit h-[32px] sm:h-[36px]" />
+               <div className="hidden md:grid grid-flow-col items-center gap-4 md:gap-6">
                   {items.map((item, index) => (
                      <React.Fragment key={item.id + index}>
                         <ul className="w-full flex items-center gap-2">
@@ -77,13 +77,13 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
                                     <TooltipTrigger asChild>
                                        <div>
                                           {item.disabled ? (
-                                             <p className="font-gadugi text-white font-medium flex-shrink cursor-default opacity-50">
+                                             <p className="font-gadugi text-white text-sm lg:text-base font-medium flex-shrink cursor-default opacity-50">
                                                 {item.label}
                                              </p>
                                           ) : (
                                              <button
                                                 onClick={() => handleScrollTo(item.scrollTo)}
-                                                className="font-gadugi text-white hover:text-white/80 flex-shrink cursor-pointer hover:underline font-medium whitespace-nowrap"
+                                                className="font-gadugi text-white hover:text-white/80 text-sm lg:text-base flex-shrink cursor-pointer hover:underline font-medium whitespace-nowrap"
                                              >
                                                 {item.label}
                                              </button>
@@ -101,13 +101,13 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
                      </React.Fragment>
                   ))}
                </div>
-               <Button variant="default" className="w-full sm:w-auto hidden md:block">
+               <Button variant="default" className="w-full sm:w-auto hidden lg:block">
                   <span className="flex items-center gap-2">
                      <WhatsAppIcon className="w-4 h-4" />
                      <span className="text-base">Agendamentos</span>
                   </span>
                </Button>
-               <div className="lg:hidden">
+               <div className="md:hidden">
                   <Sheet>
                      <SheetTrigger asChild>
                         <div>
