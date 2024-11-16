@@ -1,5 +1,3 @@
-'use client'
-
 import { WhatsAppIcon } from '@/src/components/icons/hero'
 import { Button } from '@/src/components/ui/button'
 
