@@ -25,10 +25,10 @@ export const Hero: React.FC = () => {
                         <br className="hidden md:block" />
                         de fraqueza.
                      </h1>
-                     <p className="text-sm hidden md:block sm:text-base lg:text-lg font-medium text-gray-paragraph text-center md:text-left text-white">
+                     <p className="text-sm hidden md:block sm:text-base lg:text-lg font-medium text-gray-paragraph text-center md:text-left text-white font-gadugi">
                         Dê um passo na direção da vida que você deseja viver!
                      </p>
-                     <p className="text-sm block md:hidden sm:text-base lg:text-lg font-medium text-gray-paragraph text-center md:text-left text-white">
+                     <p className="text-sm block md:hidden sm:text-base lg:text-lg font-medium text-gray-paragraph text-center md:text-left text-white font-gadugi">
                         Cuide de você com quem entende e acolhe.
                      </p>
                   </div>
