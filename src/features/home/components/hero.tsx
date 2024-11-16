@@ -35,7 +35,7 @@ export const Hero: React.FC = () => {
                      </p>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-6">
-                     <Button variant="outline" className="w-[64%] mx-auto md:w-auto md:mx-0">
+                     <Button variant="default" className="w-[64%] mx-auto md:w-auto md:mx-0 h-10">
                         <span className="flex items-center gap-2">
                            <WhatsAppIcon className="w-4 h-4" />
                            <span className="text-base">Agendamentos</span>

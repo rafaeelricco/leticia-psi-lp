@@ -97,7 +97,7 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
                               </TooltipProvider>
                            </li>
                         </ul>
-                        {index < items.length - 1 && <Separator orientation="vertical" className="h-6" />}
+                        {index < items.length - 1 && <Separator orientation="vertical" className="h-4" />}
                      </React.Fragment>
                   ))}
                </div>
