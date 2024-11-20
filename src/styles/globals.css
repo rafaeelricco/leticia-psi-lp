@@ -2,6 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+   font-family: 'Forum';
+   src: url('/fonts/Forum-Regular.ttf') format('truetype');
+   font-weight: 400;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Gadugi';
+   src: url('/fonts/Gadugi/gadugi-normal.ttf') format('truetype');
+   font-weight: 400;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Gadugi';
+   src: url('/fonts/Gadugi/gadugi-bold.ttf') format('truetype');
+   font-weight: 700;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Noto Serif Oriya';
+   src: url('/fonts/NotoSerifOriya/NotoSerifOriya-Regular.ttf') format('truetype');
+   font-weight: 400;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Noto Serif Oriya';
+   src: url('/fonts/NotoSerifOriya/NotoSerifOriya-Medium.ttf') format('truetype');
+   font-weight: 500;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Noto Serif Oriya';
+   src: url('/fonts/NotoSerifOriya/NotoSerifOriya-SemiBold.ttf') format('truetype');
+   font-weight: 600;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Retro Signature';
+   src: url('/fonts/RetroSignature.otf') format('opentype');
+   font-weight: 400;
+   font-style: normal;
+}
+
 @layer base {
    :root {
       --radius: 0.5rem;
@@ -15,6 +64,7 @@ body {
    padding: 0;
    box-sizing: border-box;
    font-family: var(--font-primary);
+   background-color: theme('colors.support07');
 }
 
 body * {

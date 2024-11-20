@@ -23,7 +23,8 @@
          "@/lib/*": ["./src/lib/*"],
          "@/types/*": ["./src/types/*"],
          "@/features/*": ["./src/features/*"],
-         "@/dictionaries/*": ["./src/dictionaries/*"]
+         "@/dictionaries/*": ["./src/dictionaries/*"],
+         "@/styles/*": ["./src/styles/*"]
       }
    },
    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
