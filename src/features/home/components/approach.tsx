@@ -10,8 +10,8 @@ export const Approach: React.FC = () => {
             <div className="flex flex-col items-center justify-center gap-4 container">
                <div className="lg:w-[700px] rounded-[32px] lg:rounded-[64px] border border-white bg-gradient-to-b from-[#677855cc] via-[#859970] via-[7%] to-[#A9C191] px-6 py-8 lg:px-20 pt-24 relative lg:-ml-[40%]">
                   <Avatar className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-28 h-28 lg:w-40 lg:h-40 border-8 border-white">
-                     <AvatarImage src="https://github.com/shadcn.png" />
-                     <AvatarFallback>CN</AvatarFallback>
+                     <AvatarImage src="/assets/leticia-avatar.png" />
+                     <AvatarFallback>LM</AvatarFallback>
                   </Avatar>
                   <div className="flex flex-col gap-4">
                      <h1 className="text-3xl md:text-3xl lg:text-4xl text-center text-white font-thin font-forum tracking-tight">

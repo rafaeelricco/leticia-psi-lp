@@ -15,14 +15,13 @@ export const Hero: React.FC = () => {
                      <h1 className="text-3xl text-center md:text-left text-white md:text-5xl lg:text-6xl font-thin font-forum uppercase tracking-tight">
                         Buscar ajuda é um
                         <br className="hidden md:block" />
-                        <span className="flex items-center gap-4 justify-center md:justify-start">
+                        <span className="flex items-center gap-4 justify-center md:justify-start h-[33px] md:h-[48px]">
                            ato de
-                           <span className="font-retro-signature lowercase h-[33px] md:h-[60px] inline-flex items-center text-[100px] md:text-[140px]">
+                           <span className="font-retro-signature lowercase flex items-center justify-center md:justify-start text-[100px] md:text-[140px] mb-8 lg:mb-10">
                               coragem,
                            </span>
                         </span>
-                        e não um sinal
-                        <br className="hidden md:block" />
+                        e não um sinal <br className="hidden md:block" />
                         de fraqueza.
                      </h1>
                      <p className="text-sm hidden md:block sm:text-base lg:text-lg font-medium text-gray-paragraph text-center md:text-left text-white font-gadugi">
