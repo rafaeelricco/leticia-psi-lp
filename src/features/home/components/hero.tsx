@@ -7,7 +7,7 @@ import Image from 'next/image'
 import React from 'react'
 
 export const Hero: React.FC = () => {
-   const [isSafari, setIsSafari] = React.useState(false)
+   const [isSafari, setIsSafari] = React.useState<boolean | null>(null)
 
    React.useEffect(() => {
       setIsSafari(/^((?!chrome|android).)*safari/i.test(navigator.userAgent))
@@ -19,7 +19,12 @@ export const Hero: React.FC = () => {
             <div className="flex-1 flex items-end md:items-center container px-4 pb-12 md:pb-0 md:px-0">
                <div className="flex flex-col gap-6 w-full">
                   <div className="flex flex-col gap-2">
-                     <h1 className="text-3xl text-center md:text-left text-white md:text-5xl lg:text-6xl font-thin font-forum tracking-tight">
+                     <h1
+                        className={cn(
+                           'text-3xl text-center md:text-left text-white md:text-5xl lg:text-6xl font-thin font-forum tracking-tight',
+                           { 'opacity-0': isSafari === null }
+                        )}
+                     >
                         <span className="uppercase">Buscar ajuda é um</span>
                         <br className="hidden md:block" />
                         <span className="flex items-center gap-4 justify-center md:justify-start h-[33px] md:h-[48px]">
