@@ -17,7 +17,7 @@ export const Hero: React.FC = () => {
                         <br className="hidden md:block" />
                         <span className="flex items-center gap-4 justify-center md:justify-start h-[33px] md:h-[48px]">
                            ato de
-                           <span className="font-retro-signature lowercase flex items-center justify-center md:justify-start text-[100px] md:text-[140px] mb-8 lg:mb-10">
+                           <span className="font-retro-signature lowercase flex items-center justify-center md:justify-start text-[100px] md:text-[140px]">
                               coragem,
                            </span>
                         </span>
