@@ -178,7 +178,7 @@ input {
 }
 
 .safari-alignment {
-   align-items: start;
+   align-items: center;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
