@@ -66,7 +66,7 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
             )}
          >
             <div className="flex items-center justify-between w-full container sm:px-4 md:px-0 gap-4 sm:gap-10">
-               <Logo className="h-[32px] sm:h-[36px]" />
+               <Logo className="h-[32px] sm:h-[36px] min-w-[200px]" />
                <div className="hidden md:grid grid-flow-col items-center gap-4 md:gap-6">
                   {items.map((item, index) => (
                      <React.Fragment key={item.id + index}>

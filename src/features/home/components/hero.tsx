@@ -17,7 +17,7 @@ export const Hero: React.FC = () => {
                         <br className="hidden md:block" />
                         <span className="flex items-center gap-4 justify-center md:justify-start h-[33px] md:h-[48px]">
                            <span className="uppercase">ato de</span>
-                           <span className="font-retro-signature text-[100px] md:text-[120px] lg:text-[140px] flex leading-[0] h-[33px] md:h-[48px] safari-alignment">
+                           <span className="font-retro-signature text-[100px] md:text-[120px] lg:text-[140px] flex leading-[0] h-[33px] md:h-[48px] items-center">
                               coragem,
                            </span>
                         </span>
