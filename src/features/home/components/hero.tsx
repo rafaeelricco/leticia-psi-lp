@@ -12,17 +12,17 @@ export const Hero: React.FC = () => {
             <div className="flex-1 flex items-end md:items-center container px-4 pb-12 md:pb-0 md:px-0">
                <div className="flex flex-col gap-6 w-full">
                   <div className="flex flex-col gap-2">
-                     <h1 className="text-3xl text-center md:text-left text-white md:text-5xl lg:text-6xl font-thin font-forum uppercase tracking-tight">
-                        Buscar ajuda é um
+                     <h1 className="text-3xl text-center md:text-left text-white md:text-5xl lg:text-6xl font-thin font-forum tracking-tight">
+                        <span className="uppercase">Buscar ajuda é um</span>
                         <br className="hidden md:block" />
                         <span className="flex items-center gap-4 justify-center md:justify-start h-[33px] md:h-[48px]">
-                           ato de
-                           <span className="font-retro-signature lowercase flex items-center justify-center md:justify-start text-[100px] md:text-[140px] mb-1">
+                           <span className="uppercase">ato de</span>
+                           <span className="font-retro-signature text-[100px] md:text-[120px] lg:text-[140px] flex leading-[0] h-[33px] md:h-[48px]">
                               coragem,
                            </span>
                         </span>
-                        e não um sinal <br className="hidden md:block" />
-                        de fraqueza.
+                        <span className="uppercase">e não um sinal</span> <br className="hidden md:block" />
+                        <span className="uppercase">de fraqueza.</span>
                      </h1>
                      <p className="text-sm hidden md:block sm:text-base lg:text-lg font-medium text-gray-paragraph text-center md:text-left text-white font-gadugi">
                         Dê um passo na direção da vida que você deseja viver!
