@@ -41,10 +41,20 @@ export const Hero: React.FC = () => {
                         <span className="uppercase">e não um sinal</span> <br className="hidden md:block" />
                         <span className="uppercase">de fraqueza.</span>
                      </h1>
-                     <p className="text-sm hidden md:block sm:text-base lg:text-lg font-medium text-gray-paragraph text-center md:text-left text-white font-gadugi">
+                     <p
+                        className={cn(
+                           'text-sm hidden md:block sm:text-base lg:text-lg font-medium text-gray-paragraph text-center md:text-left text-white font-gadugi',
+                           { 'opacity-0': isSafari === null }
+                        )}
+                     >
                         Dê um passo na direção da vida que você deseja viver!
                      </p>
-                     <p className="text-sm block md:hidden sm:text-base lg:text-lg font-medium text-gray-paragraph text-center md:text-left text-white font-gadugi">
+                     <p
+                        className={cn(
+                           'text-sm block md:hidden sm:text-base lg:text-lg font-medium text-gray-paragraph text-center md:text-left text-white font-gadugi',
+                           { 'opacity-0': isSafari === null }
+                        )}
+                     >
                         Cuide de você com quem entende e acolhe.
                      </p>
                   </div>
