@@ -11,14 +11,12 @@ export const AboutMe: React.FC = () => {
                   <img src={'/assets/leticia-about-me-hero.png'} alt="Letícia" className="object-contain" />
                </div>
                <div className="w-full md:w-1/2 flex flex-col gap-4 order-1 md:order-2">
-                  <h1 className="text-4xl text-center md:text-left text-white font-thin font-forum tracking-tight">
-                     Olá, me chamo
-                  </h1>
-                  <br className="hidden md:block" />
-                  <div>
-                     <Title className="max-w-[300px] mx-auto md:mx-0 w-[55%]" />
-                     <br className="hidden md:block" />
-                     <p className="hidden max-w-[85%] mx-auto md:inline-flex flex-col gap-4 text-base lg:text-lg font-medium text-white text-center md:text-start md:max-w-[90%] font-gadugi">
+                  <div className="flex flex-col justify-start gap-4">
+                     <h1 className="text-3xl text-center md:text-left text-white md:text-4xl font-thin font-forum tracking-tight">
+                        Olá, me chamo
+                     </h1>
+                     <Title className="mx-auto md:mx-0 w-[40%] md:w-[20vw]" />
+                     <p className="hidden max-w-[85%] md:inline-flex flex-col gap-4 text-base lg:text-lg font-medium text-white text-center md:text-start md:max-w-[90%] font-gadugi">
                         <span>
                            Sou psicóloga clínica (CRP 072459), formada há mais de dez anos e atualmente trabalho com
                            psicoterapia no formato online, tendo como abordagem a Terapia Cognitivo Comportamental
