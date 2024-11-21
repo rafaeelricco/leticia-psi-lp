@@ -61,11 +61,11 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
       <React.Fragment>
          <nav
             className={cn(
-               'fixed z-50 backdrop-blur-sm w-[calc(100%-2rem)] md:w-auto py-4 md:px-4 grid rounded-3xl border-[rgba(255,255,255,0.28)] border [background:rgba(103,120,85,0.6)_0_0_/_100%,rgba(150,143,135,0.16)_0_0_/_100%] [background-blend-mode:multiply] top-12 left-1/2 -translate-x-1/2 transition-all duration-300 overflow-hidden',
+               'fixed z-50 backdrop-blur-sm w-[calc(100%-2rem)] md:w-auto py-2.5 md:py-4 md:px-4 grid md:rounded-3xl rounded-2xl border-[rgba(255,255,255,0.28)] border bg-[#3d47332d] top-8 md:top-12 left-1/2 -translate-x-1/2 transition-all duration-300 overflow-hidden',
                className
             )}
          >
-            <div className="flex items-center justify-between w-full container sm:px-4 md:px-0 gap-4 sm:gap-10">
+            <div className="flex items-center justify-between w-full px-2.5 md:container sm:px-4 md:px-0 gap-4 sm:gap-10">
                <Logo className="h-[32px] sm:h-[36px] min-w-[200px]" />
                <div className="hidden md:grid grid-flow-col items-center gap-4 md:gap-6">
                   {items.map((item, index) => (
@@ -109,11 +109,8 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
                </Button>
                <div className="md:hidden">
                   <Sheet>
-                     <SheetTrigger asChild>
-                        <div>
-                           <HamburgerIcon className="bg-green rounded-lg" />
-                           <span className="sr-only">toggle-menu</span>
-                        </div>
+                     <SheetTrigger className="m-0 p-0 flex items-center justify-center">
+                        <HamburgerIcon className="bg-green rounded-lg" />
                      </SheetTrigger>
                      <SheetContent side="right" className="border-none">
                         <nav className="grid gap-8 mt-8 text-lg">
@@ -151,22 +148,20 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
 
 const HamburgerIcon: React.FC<{ className?: string }> = ({ className }) => {
    return (
-      <div>
-         <button className="relative group">
-            <div
-               className={cn(
-                  'relative flex overflow-hidden items-center justify-center rounded-full p-2.5 transform transition-all bg-slate-700 ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md',
-                  className
-               )}
-            >
-               <div className="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
-                  <div className="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:rotate-[42deg]"></div>
-                  <div className="bg-white h-[2px] w-1/2 rounded transform transition-all duration-300 group-focus:-translate-x-10"></div>
-                  <div className="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:-rotate-[42deg]"></div>
-               </div>
+      <button className="relative group">
+         <div
+            className={cn(
+               'relative flex overflow-hidden items-center justify-center rounded-full p-2.5 transform transition-all bg-slate-700 duration-200 shadow-md',
+               className
+            )}
+         >
+            <div className="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
+               <div className="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:rotate-[42deg]"></div>
+               <div className="bg-white h-[2px] w-1/2 rounded transform transition-all duration-300 group-focus:-translate-x-10"></div>
+               <div className="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:-rotate-[42deg]"></div>
             </div>
-         </button>
-      </div>
+         </div>
+      </button>
    )
 }
 
