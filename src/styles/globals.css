@@ -176,3 +176,15 @@ input {
       }
    }
 }
+
+.safari-alignment {
+   align-items: start;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+   @supports (-webkit-appearance: none) {
+      .safari-alignment {
+         align-items: center;
+      }
+   }
+}
