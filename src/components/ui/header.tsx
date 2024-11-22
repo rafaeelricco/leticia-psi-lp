@@ -109,8 +109,10 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
                </Button>
                <div className="md:hidden">
                   <Sheet>
-                     <SheetTrigger className="m-0 p-0 flex items-center justify-center">
-                        <HamburgerIcon className="bg-green rounded-lg" />
+                     <SheetTrigger className="m-0 p-0 flex items-center justify-center" asChild>
+                        <div>
+                           <HamburgerIcon className="bg-green rounded-lg" />
+                        </div>
                      </SheetTrigger>
                      <SheetContent side="right" className="border-none">
                         <nav className="grid gap-8 mt-8 text-lg">
