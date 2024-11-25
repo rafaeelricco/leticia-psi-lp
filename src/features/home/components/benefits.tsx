@@ -13,12 +13,15 @@ export const Benefits: React.FC = () => {
                </div>
             </div>
             <div className="grid grid-cols-[0.5fr_0.25fr_0.25fr] grid-rows-[335px] gap-4">
-               <div className="flex flex-col flex-1 gap-4">
-                  <div className="bg-support06 w-full h-[211px] rounded-3xl shadow"></div>
-                  <div className="flex items-center gap-4 h-[120px]">
-                     <div className="bg-support06 w-full h-full rounded-3xl shadow"></div>
-                     <div className="bg-support06 w-full h-full rounded-3xl shadow"></div>
+               <div className="grid grid-flow-col gap-4">
+                  <div className="flex flex-col flex-1 gap-4">
+                     <div className="bg-support06 w-full h-1/2 rounded-3xl shadow"></div>
+                     <div className="flex items-center gap-4 h-1/2">
+                        <div className="bg-support06 w-full h-full rounded-3xl shadow"></div>
+                        <div className="bg-support06 w-full h-full rounded-3xl shadow"></div>
+                     </div>
                   </div>
+                  <div className="bg-support06 w-full h-full rounded-3xl shadow"></div>
                </div>
                <div className="bg-support06 w-full h-full rounded-3xl shadow"></div>
                <div className="flex flex-col flex-1 gap-4">
