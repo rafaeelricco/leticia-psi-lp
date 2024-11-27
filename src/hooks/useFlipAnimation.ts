@@ -2,12 +2,6 @@ import * as React from 'react'
 
 import { cn } from '@/lib/utils'
 
-interface UseFlipAnimationProps {
-   id: string
-   perspective?: number
-   className?: string
-}
-
 export const useFlipAnimation = ({ id, perspective = 800, className }: UseFlipAnimationProps) => {
    const handleFlip = React.useCallback((event: React.MouseEvent<HTMLDivElement>) => {
       const container = event.currentTarget
@@ -22,4 +16,10 @@ export const useFlipAnimation = ({ id, perspective = 800, className }: UseFlipAn
       onClick: handleFlip,
       'data-flipped': 'false'
    }
+}
+
+interface UseFlipAnimationProps {
+   id: string
+   perspective?: number
+   className?: string
 }
