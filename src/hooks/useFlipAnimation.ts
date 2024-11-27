@@ -11,7 +11,7 @@ export const useFlipAnimation = ({ id, perspective = 800, className }: UseFlipAn
 
    return {
       id,
-      className: cn('flipper', className, { [`flipper-${id}`]: id }),
+      className: cn('flipper w-full h-full min-h-[100px]', className, { [`flipper-${id}`]: id }),
       style: { perspective: `${perspective}px` },
       onClick: handleFlip,
       'data-flipped': 'false'
