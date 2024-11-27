@@ -19,7 +19,7 @@ export const Benefits: React.FC = () => {
    const flip15 = useFlipAnimation({ id: 'benefit-15' })
    const flip16 = useFlipAnimation({ id: 'benefit-16' })
    const flip17 = useFlipAnimation({ id: 'benefit-17' })
-   const flip18 = useFlipAnimation({ id: 'benefit-18', className: 'col-span-2' })
+   const flip18 = useFlipAnimation({ id: 'benefit-18' })
 
    return (
       <React.Fragment>
@@ -173,7 +173,7 @@ export const Benefits: React.FC = () => {
                </div>
 
                {/* row 3 - Ajustado grid para MD */}
-               <div className="grid sm:grid-cols-2 md:grid-cols-2 md:grid-rows-[auto] lg:grid-rows-[124px]  gap-4 [&>*]:w-full">
+               <div className="grid md:grid-cols-3 md:grid-rows-[auto] lg:grid-rows-[124px] gap-4 [&>*]:w-full">
                   <div {...flip16}>
                      <div className="flipper-card h-full">
                         <div className="flipper-front bg-support06 rounded-3xl shadow h-full">Front Content 16</div>
