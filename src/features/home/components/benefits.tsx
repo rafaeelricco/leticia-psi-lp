@@ -23,7 +23,7 @@ export const Benefits: React.FC = () => {
 
    return (
       <React.Fragment>
-         <div className="relative overflow-hidden w-full -mt-12 pt-32 pb-56 container">
+         <div className="relative overflow-hidden w-full -mt-12 pt-32 pb-12 container">
             <div className="grid gap-4 w-full [&>*]:w-full">
                {/* row 1 - Ajustado grid-rows para MD */}
                <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-[auto_auto] lg:grid-rows-[300px] lg:grid-cols-[2fr_1fr_1fr] gap-4 [&>*]:w-full">
