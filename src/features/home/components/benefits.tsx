@@ -2,10 +2,10 @@ import { useFlipAnimation } from '@/src/hooks/useFlipAnimation'
 import React from 'react'
 
 export const Benefits: React.FC = () => {
-   const flip1 = useFlipAnimation({ id: 'benefit-1' })
-   const flip2 = useFlipAnimation({ id: 'benefit-2' })
-   const flip3 = useFlipAnimation({ id: 'benefit-3' })
-   const flip4 = useFlipAnimation({ id: 'benefit-4' })
+   const flip1 = useFlipAnimation({ id: 'benefit-1', className: 'min-h-[200px] md:min-h-0 h-full' })
+   const flip2 = useFlipAnimation({ id: 'benefit-2', className: 'min-h-[200px] md:min-h-0 h-full' })
+   const flip3 = useFlipAnimation({ id: 'benefit-3', className: 'min-h-[200px] md:min-h-0 h-full' })
+   const flip4 = useFlipAnimation({ id: 'benefit-4', className: 'min-h-[200px] md:min-h-0 h-full' })
 
    return (
       <React.Fragment>
