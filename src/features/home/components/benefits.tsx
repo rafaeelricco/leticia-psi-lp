@@ -9,7 +9,7 @@ export const Benefits: React.FC = () => {
       flip5: 'lg:col-span-1 min-h-[180px] lg:min-h-0',
       flip6: 'lg:col-span-1 min-h-[180px] lg:min-h-0',
       flip7: 'lg:col-span-1 min-h-[180px] lg:min-h-0',
-      flip8: 'lg:col-span-1 min-h-[180px] lg:min-h-0',
+      flip8: 'lg:col-span-1 min-h-[180px]',
       flip9: 'lg:col-span-1 min-h-[180px] lg:min-h-0',
       flip10: 'lg:col-span-1 min-h-[180px] lg:min-h-0',
       flip11: 'lg:col-span-1 min-h-[180px] lg:min-h-0',
@@ -45,7 +45,7 @@ export const Benefits: React.FC = () => {
 
    return (
       <React.Fragment>
-         <div className="relative overflow-hidden w-full -mt-12 pt-32 pb-12 container lg:px-40">
+         <div className="relative overflow-hidden w-full -mt-12 pt-32 pb-12 container lg:px-[8vw]">
             <div className="grid gap-4 w-full [&>*]:w-full">
                <div className="grid lg:grid-rows-[378px] lg:grid-cols-[2fr_1fr_1fr] gap-4 [&>*]:w-full">
                   <div className="bg-support06 rounded-3xl shadow h-full flex items-center justify-center px-12 lg:px-[6vw] relative overflow-hidden min-h-[254px] lg:min-h-0">
@@ -75,7 +75,19 @@ export const Benefits: React.FC = () => {
                               />
                            </div>
                         </div>
-                        <div className="flipper-back bg-primary rounded-3xl shadow h-full">Back Content 2</div>
+                        <div className="flipper-back bg-support06 rounded-3xl shadow h-full overflow-hidden flex flex-col items-center justify-end py-12">
+                           <span className="text-lg lg:text-xl font-gadugi text-center max-w-[80%] mx-auto text-white">
+                              Está passando por uma situação difícil
+                              <br className="hidden lg:block" /> para lidar com ela
+                           </span>
+                           <div className="absolute lg:top-1/2 left-0">
+                              <img
+                                 src="/assets/img-benefits-5.png"
+                                 alt="img-benefits-5"
+                                 className="w-full h-full object-cover"
+                              />
+                           </div>
+                        </div>
                      </div>
                   </div>
                   <div className="grid grid-rows-2 gap-4 min-w-0 [&>*]:w-full">
