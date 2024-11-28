@@ -52,7 +52,7 @@ export const Benefits: React.FC = () => {
                      <span className="text-3xl lg:text-4xl font-forum text-white text-start lg:mb-4">
                         Situações que podem indicar benefício em iniciar a psicoterapia:
                      </span>
-                     <div className="absolute bottom-0 left-0">
+                     <div className="absolute bottom-0 left-0 w-full">
                         <img
                            src="/assets/line-benefits-1.png"
                            alt="line-benefits-1"
@@ -67,11 +67,11 @@ export const Benefits: React.FC = () => {
                               Percebe que <br className="hidden lg:block" /> a sua autoestima
                               <br className="hidden lg:block" /> está muito baixa
                            </span>
-                           <div className="absolute -bottom-0.5 -rotate-[4deg] left-0">
+                           <div className="absolute -bottom-0.5 -rotate-[4deg] left-0 w-full">
                               <img
                                  src="/assets/line-benefits-2.png"
                                  alt="line-benefits-2"
-                                 className="w-full scale-[1.02] h-full object-cover"
+                                 className="w-full lg:scale-[1.02] h-full lg:object-cover"
                               />
                            </div>
                         </div>
@@ -80,7 +80,7 @@ export const Benefits: React.FC = () => {
                               Está passando por uma situação difícil
                               <br className="hidden lg:block" /> para lidar com ela
                            </span>
-                           <div className="absolute lg:top-1/2 left-0">
+                           <div className="absolute lg:top-1/2 left-0 w-full">
                               <img
                                  src="/assets/img-benefits-5.png"
                                  alt="img-benefits-5"
