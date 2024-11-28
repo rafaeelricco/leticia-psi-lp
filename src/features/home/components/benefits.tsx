@@ -27,14 +27,12 @@ export const Benefits: React.FC = () => {
          <div className="relative overflow-hidden w-full -mt-12 pt-32 pb-12 container lg:px-40">
             <div className="grid gap-4 w-full [&>*]:w-full">
                {/* row 1 - Ajustado grid-rows para MD */}
-               <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-[auto_auto] lg:grid-rows-[300px] lg:grid-cols-[2fr_1fr_1fr] gap-4 [&>*]:w-full">
-                  <div className="bg-support06 rounded-3xl shadow h-full flex items-center px-24 relative overflow-hidden">
-                     <span className="text-3xl font-forum text-white text-start">
-                        Situações que podem <br />
-                        indicar benefício em
-                        <br /> iniciar a psicoterapia:
+               <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-[auto_auto] lg:grid-rows-[378px] lg:grid-cols-[2fr_1fr_1fr] gap-4 [&>*]:w-full">
+                  <div className="bg-support06 rounded-3xl shadow h-full flex items-center justify-center px-12 lg:px-[6vw] relative overflow-hidden min-h-[254px]">
+                     <span className="text-3xl lg:text-4xl font-forum text-white text-start lg:mb-4">
+                        Situações que podem indicar benefício em iniciar a psicoterapia:
                      </span>
-                     <div className="absolute bottom-0 w-[calc(100%+3px)] right-[3px] scale-[1.01]">
+                     <div className="absolute -bottom-2 lg:bottom-0 w-[calc(100%+3px)] right-0">
                         <LineBenefits1 className="w-full h-full" />
                      </div>
                   </div>
