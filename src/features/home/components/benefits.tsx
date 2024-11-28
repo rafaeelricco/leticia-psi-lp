@@ -1,3 +1,4 @@
+import { LineBenefits1 } from '@/src/components/icons/benefits'
 import { useFlipAnimation } from '@/src/hooks/useFlipAnimation'
 import React from 'react'
 
@@ -23,19 +24,27 @@ export const Benefits: React.FC = () => {
 
    return (
       <React.Fragment>
-         <div className="relative overflow-hidden w-full -mt-12 pt-32 pb-12 container">
+         <div className="relative overflow-hidden w-full -mt-12 pt-32 pb-12 container lg:px-40">
             <div className="grid gap-4 w-full [&>*]:w-full">
                {/* row 1 - Ajustado grid-rows para MD */}
                <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-[auto_auto] lg:grid-rows-[300px] lg:grid-cols-[2fr_1fr_1fr] gap-4 [&>*]:w-full">
-                  <div {...flip1}>
-                     <div className="flipper-card h-full">
-                        <div className="flipper-front bg-support06 rounded-3xl shadow h-full">Front Content 1</div>
-                        <div className="flipper-back bg-primary rounded-3xl shadow h-full">Back Content 1</div>
+                  <div className="bg-support06 rounded-3xl shadow h-full flex items-center px-24 relative overflow-hidden">
+                     <span className="text-3xl font-forum text-white text-start">
+                        Situações que podem <br />
+                        indicar benefício em
+                        <br /> iniciar a psicoterapia:
+                     </span>
+                     <div className="absolute bottom-0 w-[calc(100%+3px)] right-[3px] scale-[1.01]">
+                        <LineBenefits1 className="w-full h-full" />
                      </div>
                   </div>
                   <div {...flip2}>
                      <div className="flipper-card h-full">
-                        <div className="flipper-front bg-support06 rounded-3xl shadow h-full">Front Content 2</div>
+                        <div className="flipper-front bg-support06 rounded-3xl shadow h-full">
+                           <span className="text-lg font-gadugi text-center max-w-[80%] mx-auto">
+                              Percebe que a sua autoestima está muito baixa 
+                           </span>
+                        </div>
                         <div className="flipper-back bg-primary rounded-3xl shadow h-full">Back Content 2</div>
                      </div>
                   </div>
@@ -57,7 +66,7 @@ export const Benefits: React.FC = () => {
 
                {/* row 2 - Ajustado grid para MD */}
                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-rows-[auto_auto] lg:grid-rows-[448px] lg:grid-cols-4 gap-4 [&>*]:w-full">
-                  <div className="grid gap-4 lg:grid-rows-[41%_20%_auto] md:col-span-2 lg:col-span-1">
+                  <div className="grid gap-4 lg:grid-rows-[0.7fr_0.3fr_auto] md:col-span-2 lg:col-span-1">
                      <div {...flip5}>
                         <div className="flipper-card h-full">
                            <div className="flipper-front bg-support06 rounded-3xl shadow h-full">Front Content 5</div>
