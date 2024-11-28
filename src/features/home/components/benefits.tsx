@@ -81,13 +81,25 @@ export const Benefits: React.FC = () => {
                   <div className="grid grid-rows-2 gap-4 min-w-0 [&>*]:w-full">
                      <div {...flip3}>
                         <div className="flipper-card h-full">
-                           <div className="flipper-front bg-support06 rounded-3xl shadow h-full">Front Content 3</div>
+                           <div className="flipper-front bg-support06 rounded-3xl shadow h-full overflow-hidden">
+                              <img
+                                 src="/assets/img-benefits-3.png"
+                                 alt="line-benefits-2"
+                                 className="w-full scale-[1.02] h-full object-cover"
+                              />
+                           </div>
                            <div className="flipper-back bg-primary rounded-3xl shadow h-full">Back Content 3</div>
                         </div>
                      </div>
                      <div {...flip4}>
                         <div className="flipper-card h-full">
-                           <div className="flipper-front bg-support06 rounded-3xl shadow h-full">Front Content 4</div>
+                           <div className="flipper-front bg-support06 rounded-3xl shadow h-full overflow-hidden">
+                              <img
+                                 src="/assets/img-benefits-4.png"
+                                 alt="line-benefits-2"
+                                 className="w-full scale-[1.02] h-full object-cover"
+                              />
+                           </div>
                            <div className="flipper-back bg-primary rounded-3xl shadow h-full">Back Content 4</div>
                         </div>
                      </div>
