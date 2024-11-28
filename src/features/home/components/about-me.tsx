@@ -23,8 +23,11 @@ export const AboutMe: React.FC = () => {
                            (TCC).
                         </span>
                         <span>
+                           Pós graduanda em Psicoterapias Baseadas em Evidências: Terapias Cognitivo Comportamentais.
+                        </span>
+                        <span>
                            Meu propósito é oferecer aos meus pacientes um atendimento comprometido, ético e totalmente
-                           individualizado, em um espaço acolhedor e livre de julgamentos.
+                           individualizado, em um espaço acolhedor e livre de julgamentos. 
                         </span>
                      </p>
                      <p className="inline-flex max-w-[85%] mx-auto flex-col gap-4 md:hidden text-center md:text-start text-sm sm:text-base font-medium text-white md:max-w-[90%] font-gadugi">
@@ -34,8 +37,11 @@ export const AboutMe: React.FC = () => {
                            (TCC).
                         </span>
                         <span>
+                           Pós graduanda em Psicoterapias Baseadas em Evidências: Terapias Cognitivo Comportamentais.
+                        </span>
+                        <span>
                            Meu propósito é oferecer aos meus pacientes um atendimento comprometido, ético e totalmente
-                           individualizado, em um espaço acolhedor e livre de julgamentos.
+                           individualizado, em um espaço acolhedor e livre de julgamentos. 
                         </span>
                      </p>
                   </div>
