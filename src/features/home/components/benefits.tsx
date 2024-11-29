@@ -1,3 +1,4 @@
+import { LineBenefits, Petal01 } from '@/src/components/icons/benefits'
 import { useFlipAnimation } from '@/src/hooks/useFlipAnimation'
 import React from 'react'
 
@@ -63,7 +64,7 @@ export const Benefits: React.FC = () => {
                   <div {...flip2}>
                      <div className="flipper-card h-full">
                         <div className="flipper-front bg-support06 rounded-3xl shadow h-full flex items-center justify-center overflow-hidden">
-                           <span className="text-lg lg:text-xl font-gadugi text-center max-w-[80%] mx-auto text-white">
+                           <span className="text-lg font-gadugi text-center max-w-[80%] mx-auto text-white">
                               Percebe que <br className="hidden lg:block" /> a sua autoestima
                               <br className="hidden lg:block" /> está muito baixa
                            </span>
@@ -71,12 +72,15 @@ export const Benefits: React.FC = () => {
                               <img
                                  src="/assets/line-benefits-2.png"
                                  alt="line-benefits-2"
-                                 className="w-full lg:scale-[1.02] h-full lg:object-cover"
+                                 className="w-full lg:scale-[1.02] h-full lg:object-cover hidden lg:block"
                               />
+                           </div>
+                           <div className="absolute lg:hidden block top-2 left-20 w-full rotate-[10deg]">
+                              <LineBenefits className="w-[600px] h-[60px]" />
                            </div>
                         </div>
                         <div className="flipper-back bg-support06 rounded-3xl shadow h-full overflow-hidden flex flex-col items-center justify-end py-12">
-                           <span className="text-lg lg:text-xl font-gadugi text-center max-w-[80%] mx-auto text-white">
+                           <span className="text-lg font-gadugi text-center max-w-[80%] mx-auto text-white">
                               Está passando por uma situação difícil
                               <br className="hidden lg:block" /> para lidar com ela
                            </span>
@@ -84,8 +88,11 @@ export const Benefits: React.FC = () => {
                               <img
                                  src="/assets/img-benefits-5.png"
                                  alt="img-benefits-5"
-                                 className="w-full h-full object-cover"
+                                 className="w-full h-full object-cover hidden lg:block"
                               />
+                           </div>
+                           <div className="absolute lg:hidden block top-2 left-0 w-full">
+                              <LineBenefits className="w-[600px] h-[60px]" />
                            </div>
                         </div>
                      </div>
@@ -101,7 +108,7 @@ export const Benefits: React.FC = () => {
                               />
                            </div>
                            <div className="flipper-back bg-support06 rounded-3xl shadow h-full flex flex-col items-center justify-center py-12">
-                              <span className="text-lg lg:text-xl font-gadugi text-center max-w-[70%] mx-auto text-white">
+                              <span className="text-lg font-gadugi text-center max-w-[70%] mx-auto text-white">
                                  Se sente desmotivado e frequentemente procrastina tarefas
                               </span>
                            </div>
@@ -116,7 +123,11 @@ export const Benefits: React.FC = () => {
                                  className="w-full scale-[1.02] h-full object-cover"
                               />
                            </div>
-                           <div className="flipper-back bg-primary rounded-3xl shadow h-full">Back Content 4</div>
+                           <div className="flipper-back bg-support06 rounded-3xl shadow h-full overflow-hidden">
+                              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex justify-center">
+                                 <Petal01 className="w-[64px]" />
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>
@@ -127,8 +138,20 @@ export const Benefits: React.FC = () => {
                   <div className="grid gap-4 lg:grid-rows-[0.7fr_0.3fr_auto] md:col-span-2 lg:col-span-1">
                      <div {...flip5}>
                         <div className="flipper-card h-full">
-                           <div className="flipper-front bg-support06 rounded-3xl shadow h-full">Front Content 5</div>
-                           <div className="flipper-back bg-primary rounded-3xl shadow h-full">Back Content 5</div>
+                           <div className="flipper-front bg-support06 rounded-3xl shadow h-full">
+                              <div className="flipper-front bg-support06 rounded-3xl shadow h-full overflow-hidden">
+                                 <img
+                                    src="/assets/img-benefits-6.png"
+                                    alt="line-benefits-2"
+                                    className="w-full scale-[1.02] h-full object-cover"
+                                 />
+                              </div>
+                           </div>
+                           <div className="flipper-back bg-support06 rounded-3xl shadow h-full">
+                              <span className="text-lg font-gadugi text-center max-w-[70%] mx-auto text-white">
+                                 Tem um perfeccionismo que te paralisa, um sentimento de nunca ser bom o bastante 
+                              </span>
+                           </div>
                         </div>
                      </div>
                      <div className="grid grid-cols-2 gap-4">
