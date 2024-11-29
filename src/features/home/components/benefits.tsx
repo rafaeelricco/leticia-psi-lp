@@ -100,7 +100,11 @@ export const Benefits: React.FC = () => {
                                  className="w-full scale-[1.02] h-full object-cover"
                               />
                            </div>
-                           <div className="flipper-back bg-primary rounded-3xl shadow h-full">Back Content 3</div>
+                           <div className="flipper-back bg-support06 rounded-3xl shadow h-full flex flex-col items-center justify-center py-12">
+                              <span className="text-lg lg:text-xl font-gadugi text-center max-w-[70%] mx-auto text-white">
+                                 Se sente desmotivado e frequentemente procrastina tarefas
+                              </span>
+                           </div>
                         </div>
                      </div>
                      <div {...flip4}>
