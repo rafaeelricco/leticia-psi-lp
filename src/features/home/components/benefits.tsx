@@ -13,7 +13,7 @@ export const Benefits: React.FC = () => {
       flip8: 'lg:col-span-1 min-h-[180px]',
       flip9: 'lg:col-span-1 min-h-[180px] lg:min-h-0',
       flip10: 'lg:col-span-1 min-h-[180px] lg:min-h-0',
-      flip11: 'lg:col-span-1 min-h-[180px] lg:min-h-0',
+      flip11: 'lg:col-span-1 min-h-[380px] lg:min-h-0',
       flip12: 'lg:col-span-1 min-h-[180px] lg:min-h-0',
       flip13: 'lg:col-span-1 min-h-[180px] lg:min-h-0',
       flip14: 'lg:col-span-1 min-h-[180px] lg:min-h-0',
@@ -239,32 +239,22 @@ export const Benefits: React.FC = () => {
                      </div>
                   </div>
 
-                  <div className="grid gap-4 grid-rows-[2fr_1fr] md:col-span-1 lg:col-span-1">
+                  <div className="grid gap-4">
                      <div {...flip11}>
                         <div className="flipper-card h-full">
                            <div className="flipper-front bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0 overflow-hidden">
                               <img
                                  src="/assets/img-benefits-10.png"
                                  alt="line-benefits-2"
-                                 className="w-full scale-[1.02] h-full object-cover"
+                                 className="w-full scale-[1.02] h-full object-cover object-top"
                               />
                            </div>
                            <div className="flipper-back bg-primary h-full rounded-3xl shadow min-h-[100px] lg:min-h-0 overflow-hidden">
                               <img
                                  src="/assets/img-benefits-11.png"
                                  alt="line-benefits-2"
-                                 className="w-full scale-[1.02] h-full object-cover"
+                                 className="w-full scale-[1.02] h-full object-cover object-center"
                               />
-                           </div>
-                        </div>
-                     </div>
-                     <div {...flip12}>
-                        <div className="flipper-card h-full">
-                           <div className="flipper-front bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0">
-                              Front Content 12
-                           </div>
-                           <div className="flipper-back bg-primary h-full rounded-3xl shadow min-h-[100px] lg:min-h-0">
-                              Back Content 12
                            </div>
                         </div>
                      </div>
@@ -309,7 +299,6 @@ export const Benefits: React.FC = () => {
                               <span className="text-lg font-gadugi text-center max-w-[70%] mx-auto text-white block">
                                  Deseja mudar alguns comportamentos ou hábitos, mas não está conseguindo
                               </span>
-
                               <div className="absolute bottom-[10%] left-0 w-full flex justify-center">
                                  <img
                                     src="/assets/img-benefits-15.png"
@@ -336,23 +325,62 @@ export const Benefits: React.FC = () => {
                </div>
 
                {/* row 3 - Ajustado grid para MD */}
-               <div className="grid md:grid-cols-3 md:grid-rows-[auto] lg:grid-rows-[124px] gap-4 [&>*]:w-full">
+               <div className="grid md:grid-cols-[1.55fr_1fr_0.5fr] lg:grid-rows-[124px] gap-4 [&>*]:w-full">
                   <div {...flip16}>
                      <div className="flipper-card h-full">
-                        <div className="flipper-front bg-support06 rounded-3xl shadow h-full">Front Content 16</div>
-                        <div className="flipper-back bg-primary rounded-3xl shadow h-full">Back Content 16</div>
+                        <div className="flipper-front bg-support06 rounded-3xl shadow h-full overflow-hidden">
+                           <img
+                              src="/assets/img-benefits-16.png"
+                              alt="line-benefits-2"
+                              className="w-full h-auto object-contain"
+                           />
+                        </div>
+                        <div className="flipper-back bg-support06 rounded-3xl shadow h-full overflow-hidden">
+                           <div className="px-10">
+                              <span className="text-lg font-gadugi text-start max-w-[70%] text-white block">
+                                 Tem muitos pensamentos negativos sobre você e ou sobre o mundo 
+                              </span>
+                              <div className="absolute bottom-0 -right-1/4 w-full flex justify-center">
+                                 <img
+                                    src="/assets/line-benefits-10-back.png"
+                                    alt="line-benefits-2"
+                                    className="w-full h-auto object-contain"
+                                 />
+                              </div>
+                           </div>
+                        </div>
                      </div>
                   </div>
                   <div {...flip17}>
                      <div className="flipper-card h-full">
-                        <div className="flipper-front bg-support06 rounded-3xl shadow h-full">Front Content 17</div>
-                        <div className="flipper-back bg-primary rounded-3xl shadow h-full">Back Content 17</div>
+                        <div className="flipper-front bg-support06 rounded-3xl shadow h-full">
+                           <span className="text-lg font-gadugi text-center max-w-[70%] mx-auto text-white block">
+                              Você não consegue lidar com as suas emoções 
+                           </span>
+                        </div>
+                        <div className="flipper-back bg-support06 rounded-3xl shadow h-full">
+                           <span className="text-lg font-gadugi text-center mx-auto max-w-[70%] text-white block">
+                              Deixou de sentir prazer e realizar atividades que antes gostava 
+                           </span>
+                        </div>
                      </div>
                   </div>
                   <div {...flip18}>
                      <div className="flipper-card h-full">
-                        <div className="flipper-front bg-support06 rounded-3xl shadow h-full">Front Content 18</div>
-                        <div className="flipper-back bg-primary rounded-3xl shadow h-full">Back Content 18</div>
+                        <div className="flipper-front bg-support06 rounded-3xl shadow h-full overflow-hidden">
+                           <img
+                              src="/assets/img-benefits-18.png"
+                              alt="line-benefits-2"
+                              className="w-full h-auto object-contain"
+                           />
+                        </div>
+                        <div className="flipper-back bg-primary rounded-3xl shadow h-full overflow-hidden">
+                           <img
+                              src="/assets/img-benefits-18-back.png"
+                              alt="line-benefits-2"
+                              className="w-full h-full object-cover"
+                           />
+                        </div>
                      </div>
                   </div>
                </div>
