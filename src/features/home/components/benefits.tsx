@@ -1,4 +1,4 @@
-import { LineBenefits, Petal01 } from '@/src/components/icons/benefits'
+import { LineBenefits, Petal01, PetalSimple, WavyLine } from '@/src/components/icons/benefits'
 import { useFlipAnimation } from '@/src/hooks/useFlipAnimation'
 import React from 'react'
 
@@ -157,25 +157,49 @@ export const Benefits: React.FC = () => {
                      <div className="grid grid-cols-2 gap-4">
                         <div {...flip6}>
                            <div className="flipper-card h-full">
-                              <div className="flipper-front bg-support06 rounded-3xl shadow h-full">
-                                 Front Content 6
+                              <div className="flipper-front bg-support06 rounded-3xl shadow h-full overflow-hidden">
+                                 <img
+                                    src="/assets/img-benefits-7.png"
+                                    alt="line-benefits-2"
+                                    className="w-full scale-[1.02] h-full object-cover"
+                                 />
                               </div>
-                              <div className="flipper-back bg-primary rounded-3xl shadow h-full">Back Content 6</div>
+                              <div className="flipper-back bg-support06 rounded-3xl shadow h-full">
+                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex justify-center">
+                                    <Petal01 className="w-[42px] -rotate-180" />
+                                 </div>
+                              </div>
                            </div>
                         </div>
                         <div {...flip7}>
                            <div className="flipper-card h-full">
                               <div className="flipper-front bg-support06 rounded-3xl shadow h-full">
-                                 Front Content 7
+                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex justify-center overflow-hidden">
+                                    <Petal01 className="w-[42px]" />
+                                 </div>
                               </div>
-                              <div className="flipper-back bg-primary rounded-3xl shadow h-full">Back Content 7</div>
+                              <div className="flipper-back bg-support06 rounded-3xl shadow h-full overflow-hidden">
+                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex justify-center overflow-hidden">
+                                    <WavyLine className="w-full scale-[1.02]" />
+                                 </div>
+                              </div>
                            </div>
                         </div>
                      </div>
                      <div {...flip8}>
                         <div className="flipper-card h-full">
-                           <div className="flipper-front bg-support06 rounded-3xl shadow h-full">Front Content 8</div>
-                           <div className="flipper-back bg-primary rounded-3xl shadow h-full">Back Content 8</div>
+                           <div className="flipper-front bg-support06 rounded-3xl shadow h-full">
+                              <span className="text-lg font-gadugi text-center max-w-[70%] mx-auto text-white block">
+                                 Vive uma vida muito distante dos seus valores
+                              </span>
+                           </div>
+                           <div className="flipper-back bg-primary rounded-3xl shadow h-full overflow-hidden">
+                              <img
+                                 src="/assets/img-benefits-8.png"
+                                 alt="line-benefits-2"
+                                 className="w-full scale-[1.02] h-full object-cover"
+                              />
+                           </div>
                         </div>
                      </div>
                   </div>
@@ -184,20 +208,32 @@ export const Benefits: React.FC = () => {
                      <div {...flip9}>
                         <div className="flipper-card h-full">
                            <div className="flipper-front bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0">
-                              Front Content 9
+                              <span className="text-lg font-gadugi text-center max-w-[70%] mx-auto text-white">
+                                 Gostaria de melhorar o relacionamento com pessoas ao seu redor
+                              </span>
                            </div>
-                           <div className="flipper-back bg-primary h-full rounded-3xl shadow min-h-[100px] lg:min-h-0">
-                              Back Content 9
+                           <div className="flipper-back bg-primary h-full rounded-3xl shadow min-h-[100px] lg:min-h-0 overflow-hidden">
+                              <img
+                                 src="/assets/img-benefits-9.png"
+                                 alt="line-benefits-2"
+                                 className="w-full scale-[1.02] h-full object-cover"
+                              />
                            </div>
                         </div>
                      </div>
                      <div {...flip10}>
                         <div className="flipper-card h-full">
-                           <div className="flipper-front bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0">
-                              Front Content 10
+                           <div className="flipper-front bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0 overflow-hidden">
+                              <img
+                                 src="/assets/line-benefits-10.png"
+                                 alt="line-benefits-2"
+                                 className="w-full h-full object-contain"
+                              />
                            </div>
-                           <div className="flipper-back bg-primary h-full rounded-3xl shadow min-h-[100px] lg:min-h-0">
-                              Back Content 10
+                           <div className="flipper-back bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0">
+                              <span className="text-lg font-gadugi text-center max-w-[70%] mx-auto text-white block">
+                                 Sente que a ansiedade toma conta de você 
+                              </span>
                            </div>
                         </div>
                      </div>
@@ -206,11 +242,19 @@ export const Benefits: React.FC = () => {
                   <div className="grid gap-4 grid-rows-[2fr_1fr] md:col-span-1 lg:col-span-1">
                      <div {...flip11}>
                         <div className="flipper-card h-full">
-                           <div className="flipper-front bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0">
-                              Front Content 11
+                           <div className="flipper-front bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0 overflow-hidden">
+                              <img
+                                 src="/assets/img-benefits-10.png"
+                                 alt="line-benefits-2"
+                                 className="w-full scale-[1.02] h-full object-cover"
+                              />
                            </div>
-                           <div className="flipper-back bg-primary h-full rounded-3xl shadow min-h-[100px] lg:min-h-0">
-                              Back Content 11
+                           <div className="flipper-back bg-primary h-full rounded-3xl shadow min-h-[100px] lg:min-h-0 overflow-hidden">
+                              <img
+                                 src="/assets/img-benefits-11.png"
+                                 alt="line-benefits-2"
+                                 className="w-full scale-[1.02] h-full object-cover"
+                              />
                            </div>
                         </div>
                      </div>
@@ -231,20 +275,30 @@ export const Benefits: React.FC = () => {
                         <div {...flip13}>
                            <div className="flipper-card h-full">
                               <div className="flipper-front bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0">
-                                 Front Content 13
+                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex justify-center">
+                                    <PetalSimple className="w-[54px]" />
+                                 </div>
                               </div>
-                              <div className="flipper-back bg-primary h-full rounded-3xl shadow min-h-[100px] lg:min-h-0">
-                                 Back Content 13
+                              <div className="flipper-back bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0 overflow-hidden">
+                                 <img
+                                    src="/assets/img-benefits-13.png"
+                                    alt="line-benefits-2"
+                                    className="w-full h-full object-cover"
+                                 />
                               </div>
                            </div>
                         </div>
                         <div {...flip14}>
                            <div className="flipper-card h-full">
                               <div className="flipper-front bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0">
-                                 Front Content 14
+                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex justify-center">
+                                    <PetalSimple className="w-[54px] -rotate-180" />
+                                 </div>
                               </div>
-                              <div className="flipper-back bg-primary h-full rounded-3xl shadow min-h-[100px] lg:min-h-0">
-                                 Back Content 14
+                              <div className="flipper-back bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0 overflow-hidden">
+                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex justify-center">
+                                    <PetalSimple className="w-[54px]" />
+                                 </div>
                               </div>
                            </div>
                         </div>
@@ -252,10 +306,29 @@ export const Benefits: React.FC = () => {
                      <div {...flip15}>
                         <div className="flipper-card h-full">
                            <div className="flipper-front bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0">
-                              Front Content 15
+                              <span className="text-lg font-gadugi text-center max-w-[70%] mx-auto text-white block">
+                                 Deseja mudar alguns comportamentos ou hábitos, mas não está conseguindo
+                              </span>
+
+                              <div className="absolute bottom-[10%] left-0 w-full flex justify-center">
+                                 <img
+                                    src="/assets/img-benefits-15.png"
+                                    alt="line-benefits-2"
+                                    className="w-full h-auto object-contain"
+                                 />
+                              </div>
                            </div>
-                           <div className="flipper-back bg-primary h-full rounded-3xl shadow min-h-[100px] lg:min-h-0">
-                              Back Content 15
+                           <div className="flipper-back bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0">
+                              <span className="text-lg font-gadugi text-center max-w-[70%] mx-auto text-white block">
+                                 Tem algum medo que te impede de fazer coisas que você gostaria
+                              </span>
+                              <div className="absolute bottom-[10%] left-0 w-full flex justify-center">
+                                 <img
+                                    src="/assets/img-benefits-15-back.png"
+                                    alt="line-benefits-2"
+                                    className="w-full h-auto object-contain"
+                                 />
+                              </div>
                            </div>
                         </div>
                      </div>
