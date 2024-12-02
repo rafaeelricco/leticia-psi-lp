@@ -144,8 +144,6 @@ export const Benefits: React.FC = () => {
                      </div>
                   </div>
                </div>
-
-               {/* row 2 - Ajustado grid para MD */}
                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-rows-[auto_auto] lg:grid-rows-[448px] lg:grid-cols-4 gap-4 [&>*]:w-full">
                   <div className="grid gap-4 lg:grid-rows-[0.7fr_0.3fr_auto] md:col-span-2 lg:col-span-1">
                      <div {...flip5}>
@@ -227,7 +225,6 @@ export const Benefits: React.FC = () => {
                         </div>
                      </div>
                   </div>
-
                   <div className="grid gap-4 grid-rows-[2fr_1fr] md:col-span-1 lg:col-span-1">
                      <div {...flip9}>
                         <div className="flipper-card h-full">
@@ -270,7 +267,6 @@ export const Benefits: React.FC = () => {
                         </div>
                      </div>
                   </div>
-
                   <div className="grid gap-4">
                      <div {...flip11}>
                         <div className="flipper-card h-full">
