@@ -141,6 +141,7 @@ input {
 }
 
 .animate-green {
+   will-change: box-shadow;
    animation: green-pulse 2s infinite;
 }
 

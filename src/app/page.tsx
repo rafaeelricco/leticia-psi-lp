@@ -1,11 +1,9 @@
-import { HomePageComponent } from '@/features/home/home'
+import dynamic from 'next/dynamic'
 
-import React from 'react'
+const HomePageComponent = dynamic(() => import('@/features/home/home').then((mod) => mod.HomePageComponent), {
+   ssr: true
+})
 
-export default async function HomePage() {
-   return (
-      <React.Suspense>
-         <HomePageComponent />
-      </React.Suspense>
-   )
+export default function HomePage() {
+   return <HomePageComponent />
 }
