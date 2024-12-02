@@ -7,6 +7,7 @@ import { Separator } from '@/components/ui/separator'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import { cn } from '@/lib/utils'
+import { VARS } from '@/src/lib/variables'
 
 import React from 'react'
 
@@ -101,7 +102,11 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
                      </React.Fragment>
                   ))}
                </div>
-               <Button variant="default" className="w-full sm:w-auto hidden lg:block">
+               <Button
+                  variant="default"
+                  className="w-full sm:w-auto hidden lg:block"
+                  onClick={() => window.open(VARS.WHATSAPP_LINK, '_blank')}
+               >
                   <span className="flex items-center gap-2">
                      <WhatsAppIcon className="w-4 h-4" />
                      <span className="text-base">Agendamentos</span>
@@ -132,7 +137,11 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
                                  </React.Fragment>
                               ))}
                            </div>
-                           <Button variant="default" className="w-full mt-4">
+                           <Button
+                              variant="default"
+                              className="w-full mt-4"
+                              onClick={() => window.open(VARS.WHATSAPP_LINK, '_blank')}
+                           >
                               <span className="flex items-center gap-2">
                                  <WhatsAppIcon className="w-4 h-4" />
                                  <span className="text-base">Agendamentos</span>

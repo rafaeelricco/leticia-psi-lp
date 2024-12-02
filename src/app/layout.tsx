@@ -40,7 +40,20 @@ export default function RootLayout({
 }>) {
    return (
       <html lang="pt-BR">
-         <body className="antialiased">{children}</body>
+         <head>
+            <meta
+               name="description"
+               content="Psicóloga clínica especialista em Terapia Cognitivo Comportamental (TCC) com mais de 10 anos de experiência. Atendimento online personalizado, ético e acolhedor para ajudar você a alcançar bem-estar emocional."
+            />
+            <meta
+               name="keywords"
+               content="psicóloga online, terapia online, psicoterapia, TCC, Terapia Cognitivo Comportamental, psicóloga São Paulo, atendimento psicológico"
+            />
+            <meta name="author" content="Leticia Mathias" />
+         </head>
+         <body className="antialiased" aria-label="Página principal de Leticia Mathias, Psicóloga Clínica">
+            <main role="main">{children}</main>
+         </body>
       </html>
    )
 }
