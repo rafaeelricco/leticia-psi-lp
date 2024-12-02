@@ -1,14 +1,30 @@
 'use client'
 
-import { AboutMe } from '@/features/home/components/about-me'
-import { Approach } from '@/features/home/components/approach'
-import { Benefits } from '@/features/home/components/benefits'
+// import { AboutMe } from '@/features/home/components/about-me'
+// import { Approach } from '@/features/home/components/approach'
+// import { Benefits } from '@/features/home/components/benefits'
+// import { Services } from '@/features/home/components/services'
+
 import { Footer } from '@/features/home/components/footer'
 import { Hero } from '@/features/home/components/hero'
-import { Services } from '@/features/home/components/services'
 import { Header } from '@/src/components/ui/header'
 
+import dynamic from 'next/dynamic'
 import React from 'react'
+
+const AboutMe = dynamic(() => import('@/features/home/components/about-me').then((mod) => mod.AboutMe), { ssr: false })
+
+const Services = dynamic(() => import('@/features/home/components/services').then((mod) => mod.Services), {
+   ssr: false
+})
+
+const Approach = dynamic(() => import('@/features/home/components/approach').then((mod) => mod.Approach), {
+   ssr: false
+})
+
+const Benefits = dynamic(() => import('@/features/home/components/benefits').then((mod) => mod.Benefits), {
+   ssr: true
+})
 
 export const HomePageComponent: React.FC = () => {
    return (
