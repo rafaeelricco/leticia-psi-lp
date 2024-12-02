@@ -1,6 +1,7 @@
 import { LineBenefits, Petal01, PetalSimple, WavyLine } from '@/src/components/icons/benefits'
 import { useFlipAnimation } from '@/src/hooks/useFlipAnimation'
 
+import Image from 'next/image'
 import React from 'react'
 
 export const Benefits: React.FC = () => {
@@ -50,10 +51,12 @@ export const Benefits: React.FC = () => {
                         Situações que podem indicar benefício em iniciar a psicoterapia:
                      </span>
                      <div className="absolute bottom-0 left-0 w-full">
-                        <img
-                           loading="lazy"
+                        <Image
                            src="/assets/line-benefits-1.png"
                            alt="line-benefits-1"
+                           width={0}
+                           height={0}
+                           sizes="100vw"
                            className="w-full h-full object-cover"
                         />
                      </div>
@@ -66,10 +69,12 @@ export const Benefits: React.FC = () => {
                               <br className="hidden lg:block" /> está muito baixa
                            </span>
                            <div className="absolute -bottom-0.5 -rotate-[4deg] left-0 w-full">
-                              <img
-                                 loading="lazy"
+                              <Image
                                  src="/assets/line-benefits-2.png"
                                  alt="line-benefits-2"
+                                 width={0}
+                                 height={0}
+                                 sizes="100vw"
                                  className="w-full lg:scale-[1.02] h-full lg:object-cover hidden lg:block"
                               />
                            </div>
@@ -83,10 +88,12 @@ export const Benefits: React.FC = () => {
                               <br className="hidden lg:block" /> para lidar com ela
                            </span>
                            <div className="absolute lg:top-1/2 left-0 w-full">
-                              <img
-                                 loading="lazy"
+                              <Image
                                  src="/assets/img-benefits-5.png"
                                  alt="img-benefits-5"
+                                 width={0}
+                                 height={0}
+                                 sizes="100vw"
                                  className="w-full h-full object-cover hidden lg:block"
                               />
                            </div>
@@ -100,10 +107,12 @@ export const Benefits: React.FC = () => {
                      <div {...flip3}>
                         <div className="flipper-card h-full">
                            <div className="flipper-front bg-support06 rounded-3xl shadow h-full overflow-hidden">
-                              <img
-                                 loading="lazy"
+                              <Image
                                  src="/assets/img-benefits-3.png"
                                  alt="line-benefits-2"
+                                 width={0}
+                                 height={0}
+                                 sizes="100vw"
                                  className="w-full scale-[1.02] h-full object-cover"
                               />
                            </div>
@@ -117,10 +126,12 @@ export const Benefits: React.FC = () => {
                      <div {...flip4}>
                         <div className="flipper-card h-full">
                            <div className="flipper-front bg-support06 rounded-3xl shadow h-full overflow-hidden">
-                              <img
-                                 loading="lazy"
+                              <Image
                                  src="/assets/img-benefits-4.png"
                                  alt="line-benefits-2"
+                                 width={0}
+                                 height={0}
+                                 sizes="100vw"
                                  className="w-full scale-[1.02] h-full object-cover"
                               />
                            </div>
@@ -141,10 +152,13 @@ export const Benefits: React.FC = () => {
                         <div className="flipper-card h-full">
                            <div className="flipper-front bg-support06 rounded-3xl shadow h-full">
                               <div className="flipper-front bg-support06 rounded-3xl shadow h-full overflow-hidden">
-                                 <img
-                                    loading="lazy"
+                                 <Image
                                     src="/assets/img-benefits-6.png"
                                     alt="line-benefits-2"
+                                    width={0}
+                                    height={0}
+                                    quality={10}
+                                    sizes="100vw"
                                     className="w-full scale-[1.02] h-full object-cover"
                                  />
                               </div>
@@ -160,10 +174,13 @@ export const Benefits: React.FC = () => {
                         <div {...flip6}>
                            <div className="flipper-card h-full">
                               <div className="flipper-front bg-support06 rounded-3xl shadow h-full overflow-hidden">
-                                 <img
-                                    loading="lazy"
+                                 <Image
                                     src="/assets/img-benefits-7.png"
                                     alt="line-benefits-2"
+                                    width={0}
+                                    height={0}
+                                    quality={10}
+                                    sizes="100vw"
                                     className="w-full scale-[1.02] h-full object-cover"
                                  />
                               </div>
@@ -197,10 +214,13 @@ export const Benefits: React.FC = () => {
                               </span>
                            </div>
                            <div className="flipper-back bg-primary rounded-3xl shadow h-full overflow-hidden">
-                              <img
-                                 loading="lazy"
+                              <Image
                                  src="/assets/img-benefits-8.png"
                                  alt="line-benefits-2"
+                                 width={0}
+                                 height={0}
+                                 quality={10}
+                                 sizes="100vw"
                                  className="w-full scale-[1.02] h-full object-cover"
                               />
                            </div>
@@ -217,10 +237,13 @@ export const Benefits: React.FC = () => {
                               </span>
                            </div>
                            <div className="flipper-back bg-primary h-full rounded-3xl shadow min-h-[100px] lg:min-h-0 overflow-hidden">
-                              <img
-                                 loading="lazy"
+                              <Image
                                  src="/assets/img-benefits-9.png"
                                  alt="line-benefits-2"
+                                 width={0}
+                                 height={0}
+                                 quality={10}
+                                 sizes="100vw"
                                  className="w-full scale-[1.02] h-full object-cover"
                               />
                            </div>
@@ -229,9 +252,13 @@ export const Benefits: React.FC = () => {
                      <div {...flip10}>
                         <div className="flipper-card h-full">
                            <div className="flipper-front bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0 overflow-hidden">
-                              <img
+                              <Image
                                  src="/assets/line-benefits-10.png"
                                  alt="line-benefits-2"
+                                 width={0}
+                                 height={0}
+                                 quality={10}
+                                 sizes="100vw"
                                  className="w-full h-full object-contain"
                               />
                            </div>
@@ -248,23 +275,30 @@ export const Benefits: React.FC = () => {
                      <div {...flip11}>
                         <div className="flipper-card h-full">
                            <div className="flipper-front bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0 overflow-hidden">
-                              <img
+                              <Image
                                  src="/assets/img-benefits-10.png"
                                  alt="line-benefits-2"
+                                 width={0}
+                                 height={0}
+                                 quality={10}
+                                 sizes="100vw"
                                  className="w-full scale-[1.02] h-full object-cover object-top"
                               />
                            </div>
                            <div className="flipper-back bg-primary h-full rounded-3xl shadow min-h-[100px] lg:min-h-0 overflow-hidden">
-                              <img
+                              <Image
                                  src="/assets/img-benefits-11.png"
                                  alt="line-benefits-2"
+                                 width={0}
+                                 height={0}
+                                 quality={10}
+                                 sizes="100vw"
                                  className="w-full scale-[1.02] h-full object-cover object-center"
                               />
                            </div>
                         </div>
                      </div>
                   </div>
-
                   <div className="grid gap-4 grid-rows-[0.3fr_auto] md:col-span-2 lg:col-span-1">
                      <div className="grid grid-flow-col gap-4 h-full">
                         <div {...flip13}>
@@ -275,9 +309,13 @@ export const Benefits: React.FC = () => {
                                  </div>
                               </div>
                               <div className="flipper-back bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0 overflow-hidden">
-                                 <img
+                                 <Image
                                     src="/assets/img-benefits-13.png"
                                     alt="line-benefits-2"
+                                    width={0}
+                                    height={0}
+                                    quality={10}
+                                    sizes="100vw"
                                     className="w-full h-full object-cover"
                                  />
                               </div>
@@ -305,9 +343,13 @@ export const Benefits: React.FC = () => {
                                  Deseja mudar alguns comportamentos ou hábitos, mas não está conseguindo
                               </span>
                               <div className="absolute -bottom-10 lg:bottom-[10%] left-0 w-full flex justify-center">
-                                 <img
+                                 <Image
                                     src="/assets/img-benefits-15.png"
                                     alt="line-benefits-2"
+                                    width={0}
+                                    height={0}
+                                    quality={10}
+                                    sizes="100vw"
                                     className="w-full object-contain"
                                  />
                               </div>
@@ -317,9 +359,13 @@ export const Benefits: React.FC = () => {
                                  Tem algum medo que te impede de fazer coisas que você gostaria
                               </span>
                               <div className="absolute -bottom-10 lg:bottom-[10%] left-0 w-full flex justify-center">
-                                 <img
+                                 <Image
                                     src="/assets/img-benefits-15-back.png"
                                     alt="line-benefits-2"
+                                    width={0}
+                                    height={0}
+                                    quality={10}
+                                    sizes="100vw"
                                     className="w-full h-auto object-contain"
                                  />
                               </div>
@@ -332,9 +378,13 @@ export const Benefits: React.FC = () => {
                   <div {...flip16}>
                      <div className="flipper-card h-full">
                         <div className="flipper-front bg-support06 rounded-3xl shadow h-full overflow-hidden">
-                           <img
+                           <Image
                               src="/assets/img-benefits-16.png"
                               alt="line-benefits-2"
+                              width={0}
+                              height={0}
+                              quality={10}
+                              sizes="100vw"
                               className="w-full h-auto object-contain"
                            />
                         </div>
@@ -344,9 +394,13 @@ export const Benefits: React.FC = () => {
                                  Tem muitos pensamentos negativos sobre você e ou sobre o mundo 
                               </span>
                               <div className="absolute bottom-0 -right-1/4 w-full flex justify-center">
-                                 <img
+                                 <Image
                                     src="/assets/line-benefits-10-back.png"
                                     alt="line-benefits-2"
+                                    width={0}
+                                    height={0}
+                                    quality={10}
+                                    sizes="100vw"
                                     className="w-full h-auto object-contain"
                                  />
                               </div>
@@ -371,18 +425,24 @@ export const Benefits: React.FC = () => {
                   <div {...flip18}>
                      <div className="flipper-card h-full">
                         <div className="flipper-front bg-support06 rounded-3xl shadow h-full overflow-hidden">
-                           <img
-                              loading="lazy"
+                           <Image
                               src="/assets/img-benefits-18.png"
                               alt="line-benefits-2"
+                              width={0}
+                              height={0}
+                              quality={10}
+                              sizes="100vw"
                               className="w-full h-auto object-contain"
                            />
                         </div>
                         <div className="flipper-back bg-primary rounded-3xl shadow h-full overflow-hidden">
-                           <img
-                              loading="lazy"
+                           <Image
                               src="/assets/img-benefits-18-back.png"
                               alt="line-benefits-2"
+                              width={0}
+                              height={0}
+                              quality={10}
+                              sizes="100vw"
                               className="w-full h-full object-cover"
                            />
                         </div>
