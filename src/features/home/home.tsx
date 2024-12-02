@@ -28,7 +28,7 @@ const Benefits = dynamic(() => import('@/features/home/components/benefits').the
 
 export const HomePageComponent: React.FC = () => {
    return (
-      <React.Fragment>
+      <React.Suspense>
          <Header />
          <Hero />
          <AboutMe />
@@ -36,6 +36,6 @@ export const HomePageComponent: React.FC = () => {
          <Approach />
          <Benefits />
          <Footer />
-      </React.Fragment>
+      </React.Suspense>
    )
 }
