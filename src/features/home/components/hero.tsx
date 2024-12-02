@@ -31,7 +31,7 @@ export const Hero: React.FC = () => {
                      Dê um passo na direção da vida que você deseja viver!
                   </p>
                   <p className="text-sm block md:hidden sm:text-base lg:text-lg font-medium text-gray-paragraph text-center md:text-left text-white font-gadugi">
-                     Cuide de você com quem entende e acolhe.
+                     Dê um passo na direção da vida que você deseja viver!
                   </p>
                </div>
                <div className="flex flex-col sm:flex-row gap-6">
