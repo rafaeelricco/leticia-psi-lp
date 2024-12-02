@@ -52,11 +52,13 @@ export const Hero: React.FC = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent -z-[5] md:hidden" />
             <Image
+               priority
                src="/assets/whatsapp-icon.png"
                alt="WhatsApp"
-               width={48}
-               height={48}
-               className="fixed bottom-4 right-4 z-50 md:hidden cursor-pointer"
+               width={54}
+               height={54}
+               quality={100}
+               className="fixed bottom-4 right-4 z-50 md:hidden cursor-pointer active:scale-110 transition-all duration-300"
             />
          </div>
       </React.Fragment>
