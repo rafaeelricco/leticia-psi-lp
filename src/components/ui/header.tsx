@@ -114,10 +114,10 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
                </Button>
                <div className="md:hidden">
                   <Sheet>
-                     <SheetTrigger className="m-0 p-0 flex items-center justify-center" asChild>
-                        <div>
+                     <SheetTrigger asChild>
+                        <button className="flex items-center justify-center" aria-label="Abrir menu">
                            <HamburgerIcon className="bg-green rounded-lg" />
-                        </div>
+                        </button>
                      </SheetTrigger>
                      <SheetContent side="right" className="border-none">
                         <nav className="grid gap-8 mt-8 text-lg">
@@ -159,7 +159,7 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
 
 const HamburgerIcon: React.FC<{ className?: string }> = ({ className }) => {
    return (
-      <button className="relative group">
+      <div className="relative group">
          <div
             className={cn(
                'relative flex overflow-hidden items-center justify-center rounded-full p-2.5 transform transition-all bg-slate-700 duration-200 shadow-md',
@@ -172,7 +172,7 @@ const HamburgerIcon: React.FC<{ className?: string }> = ({ className }) => {
                <div className="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:-rotate-[42deg]"></div>
             </div>
          </div>
-      </button>
+      </div>
    )
 }
 
