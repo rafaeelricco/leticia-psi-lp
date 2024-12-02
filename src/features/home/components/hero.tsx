@@ -1,9 +1,10 @@
 import { WhatsAppIcon } from '@/src/components/icons/hero'
 import { Button } from '@/src/components/ui/button'
+import { VARS } from '@/src/lib/variables'
 
 import HeroImage from '@/public/assets/leticia-psi-hero.png'
-import { VARS } from '@/src/lib/variables'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export const Hero: React.FC = () => {
@@ -20,7 +21,7 @@ export const Hero: React.FC = () => {
                      <br className="hidden md:block" />
                      <span className="flex items-center gap-4 justify-center md:justify-start h-[33px] md:h-[48px]">
                         <span className="uppercase">ato de</span>
-                        <span className="font-retro-signature text-[100px] md:text-[120px] lg:text-[140px] flex leading-[0] h-[33px] md:h-[48px] items-center">
+                        <span className="font-retro-signature text-[100px] md:text-[120px] lg:text-[140px] flex leading-[0] h-[33px] md:h-[48px] items-center -translate-y-3">
                            coragem,
                         </span>
                      </span>
@@ -34,18 +35,25 @@ export const Hero: React.FC = () => {
                      Dê um passo na direção da vida que você deseja viver!
                   </p>
                </div>
-               <div className="flex flex-col sm:flex-row gap-6">
-                  <Button
-                     variant="default"
-                     className="w-[64%] mx-auto md:w-auto md:mx-0 h-10"
-                     aria-label="Agendar consulta via WhatsApp"
-                     onClick={() => window.open(VARS.WHATSAPP_LINK, '_blank')}
+               <div className="flex flex-col justify-center md:justify-start items-center md:items-start sm:flex-row gap-6">
+                  <Link
+                     prefetch={false}
+                     href={VARS.WHATSAPP_LINK}
+                     target="_blank"
+                     aria-label="whatsapp"
+                     className="w-fit grid"
                   >
-                     <span className="flex items-center gap-2">
-                        <WhatsAppIcon className="w-4 h-4" />
-                        <span className="text-base">Agendamentos</span>
-                     </span>
-                  </Button>
+                     <Button
+                        variant="default"
+                        aria-label="Agendar consulta via WhatsApp"
+                        className="w-full md:max-w-min mx-auto md:mx-0 px-20"
+                     >
+                        <span className="flex items-center gap-2">
+                           <WhatsAppIcon className="w-4 h-4" />
+                           <span className="text-base">Agendamentos</span>
+                        </span>
+                     </Button>
+                  </Link>
                </div>
             </div>
          </div>
@@ -62,19 +70,20 @@ export const Hero: React.FC = () => {
             role="img"
          />
          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent -z-[5] md:hidden" />
-         <Image
-            priority
-            src="/assets/whatsapp-icon.png"
-            alt="Contatar via WhatsApp"
-            width={54}
-            height={54}
-            quality={100}
-            className="fixed bottom-4 right-4 z-50 md:hidden cursor-pointer active:scale-110 transition-all duration-300"
-            role="button"
-            aria-label="Abrir chat do WhatsApp"
-            onClick={() => window.open(VARS.WHATSAPP_LINK, '_blank')}
-            tabIndex={0}
-         />
+         <Link prefetch={false} href={VARS.WHATSAPP_LINK} target="_blank" aria-label="whatsapp">
+            <Image
+               priority
+               src="/assets/whatsapp-icon.png"
+               alt="Contatar via WhatsApp"
+               width={54}
+               height={54}
+               quality={100}
+               className="fixed bottom-4 right-4 z-50 md:hidden cursor-pointer active:scale-110 transition-all duration-300"
+               role="button"
+               aria-label="Abrir chat do WhatsApp"
+               tabIndex={0}
+            />
+         </Link>
       </section>
    )
 }

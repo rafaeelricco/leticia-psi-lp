@@ -9,6 +9,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 import { cn } from '@/lib/utils'
 import { VARS } from '@/src/lib/variables'
 
+import Link from 'next/link'
 import React from 'react'
 
 const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
@@ -102,16 +103,14 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
                      </React.Fragment>
                   ))}
                </div>
-               <Button
-                  variant="default"
-                  className="w-full sm:w-auto hidden lg:block"
-                  onClick={() => window.open(VARS.WHATSAPP_LINK, '_blank')}
-               >
-                  <span className="flex items-center gap-2">
-                     <WhatsAppIcon className="w-4 h-4" />
-                     <span className="text-base">Agendamentos</span>
-                  </span>
-               </Button>
+               <Link prefetch={false} href={VARS.WHATSAPP_LINK} target="_blank" aria-label="whatsapp">
+                  <Button variant="default" className="w-full sm:w-auto hidden lg:block">
+                     <span className="flex items-center gap-2">
+                        <WhatsAppIcon className="w-4 h-4" />
+                        <span className="text-base">Agendamentos</span>
+                     </span>
+                  </Button>
+               </Link>
                <div className="md:hidden">
                   <Sheet>
                      <SheetTrigger asChild>
@@ -137,16 +136,14 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
                                  </React.Fragment>
                               ))}
                            </div>
-                           <Button
-                              variant="default"
-                              className="w-full mt-4"
-                              onClick={() => window.open(VARS.WHATSAPP_LINK, '_blank')}
-                           >
-                              <span className="flex items-center gap-2">
-                                 <WhatsAppIcon className="w-4 h-4" />
-                                 <span className="text-base">Agendamentos</span>
-                              </span>
-                           </Button>
+                           <Link prefetch={false} href={VARS.WHATSAPP_LINK} target="_blank" aria-label="whatsapp">
+                              <Button variant="default" className="w-full mt-4">
+                                 <span className="flex items-center gap-2">
+                                    <WhatsAppIcon className="w-4 h-4" />
+                                    <span className="text-base">Agendamentos</span>
+                                 </span>
+                              </Button>
+                           </Link>
                         </nav>
                      </SheetContent>
                   </Sheet>
