@@ -155,7 +155,6 @@ export const Benefits: React.FC = () => {
                                     alt="line-benefits-2"
                                     width={0}
                                     height={0}
-                                    quality={10}
                                     sizes="100vw"
                                     className="w-full scale-[1.02] h-full object-cover"
                                  />
@@ -177,7 +176,6 @@ export const Benefits: React.FC = () => {
                                     alt="line-benefits-2"
                                     width={0}
                                     height={0}
-                                    quality={10}
                                     sizes="100vw"
                                     className="w-full scale-[1.02] h-full object-cover"
                                  />
@@ -217,7 +215,6 @@ export const Benefits: React.FC = () => {
                                  alt="line-benefits-2"
                                  width={0}
                                  height={0}
-                                 quality={10}
                                  sizes="100vw"
                                  className="w-full scale-[1.02] h-full object-cover"
                               />
@@ -239,7 +236,6 @@ export const Benefits: React.FC = () => {
                                  alt="line-benefits-2"
                                  width={0}
                                  height={0}
-                                 quality={10}
                                  sizes="100vw"
                                  className="w-full scale-[1.02] h-full object-cover"
                               />
@@ -254,7 +250,6 @@ export const Benefits: React.FC = () => {
                                  alt="line-benefits-2"
                                  width={0}
                                  height={0}
-                                 quality={10}
                                  sizes="100vw"
                                  className="w-full h-full object-contain"
                               />
@@ -276,7 +271,6 @@ export const Benefits: React.FC = () => {
                                  alt="line-benefits-2"
                                  width={0}
                                  height={0}
-                                 quality={10}
                                  sizes="100vw"
                                  className="w-full scale-[1.02] h-full object-cover object-top"
                               />
@@ -287,7 +281,6 @@ export const Benefits: React.FC = () => {
                                  alt="line-benefits-2"
                                  width={0}
                                  height={0}
-                                 quality={10}
                                  sizes="100vw"
                                  className="w-full scale-[1.02] h-full object-cover object-center"
                               />
@@ -310,7 +303,6 @@ export const Benefits: React.FC = () => {
                                     alt="line-benefits-2"
                                     width={0}
                                     height={0}
-                                    quality={10}
                                     sizes="100vw"
                                     className="w-full h-full object-cover"
                                  />
@@ -344,7 +336,6 @@ export const Benefits: React.FC = () => {
                                     alt="line-benefits-2"
                                     width={0}
                                     height={0}
-                                    quality={10}
                                     sizes="100vw"
                                     className="w-full object-contain"
                                  />
@@ -360,7 +351,6 @@ export const Benefits: React.FC = () => {
                                     alt="line-benefits-2"
                                     width={0}
                                     height={0}
-                                    quality={10}
                                     sizes="100vw"
                                     className="w-full h-auto object-contain"
                                  />
@@ -379,7 +369,6 @@ export const Benefits: React.FC = () => {
                               alt="line-benefits-2"
                               width={0}
                               height={0}
-                              quality={10}
                               sizes="100vw"
                               className="w-full h-auto object-contain"
                            />
@@ -395,7 +384,6 @@ export const Benefits: React.FC = () => {
                                     alt="line-benefits-2"
                                     width={0}
                                     height={0}
-                                    quality={10}
                                     sizes="100vw"
                                     className="w-full h-auto object-contain"
                                  />
@@ -426,7 +414,6 @@ export const Benefits: React.FC = () => {
                               alt="line-benefits-2"
                               width={0}
                               height={0}
-                              quality={10}
                               sizes="100vw"
                               className="w-full h-auto object-contain"
                            />
@@ -437,7 +424,6 @@ export const Benefits: React.FC = () => {
                               alt="line-benefits-2"
                               width={0}
                               height={0}
-                              quality={10}
                               sizes="100vw"
                               className="w-full h-full object-cover"
                            />
