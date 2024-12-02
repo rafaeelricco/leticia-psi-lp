@@ -75,11 +75,11 @@ export const Benefits: React.FC = () => {
                                  className="w-full lg:scale-[1.02] h-full lg:object-cover hidden lg:block"
                               />
                            </div>
-                           <div className="absolute lg:hidden block top-2 left-20 w-full rotate-[10deg]">
+                           <div className="absolute lg:hidden block -top-4 left-40 w-full rotate-[10deg]">
                               <LineBenefits className="w-[600px] h-[60px]" />
                            </div>
                         </div>
-                        <div className="flipper-back bg-support06 rounded-3xl shadow h-full overflow-hidden flex flex-col items-center justify-end py-12">
+                        <div className="flipper-back bg-support06 rounded-3xl shadow h-full overflow-hidden flex flex-col items-center lg:justify-end py-12">
                            <span className="text-lg font-gadugi text-center max-w-[80%] mx-auto text-white">
                               Está passando por uma situação difícil
                               <br className="hidden lg:block" /> para lidar com ela
@@ -91,8 +91,8 @@ export const Benefits: React.FC = () => {
                                  className="w-full h-full object-cover hidden lg:block"
                               />
                            </div>
-                           <div className="absolute lg:hidden block top-2 left-0 w-full">
-                              <LineBenefits className="w-[600px] h-[60px]" />
+                           <div className="absolute lg:hidden block top-0 left-0 w-full">
+                              <LineBenefits className="w-full h-[60px]" />
                            </div>
                         </div>
                      </div>
@@ -295,23 +295,23 @@ export const Benefits: React.FC = () => {
                      </div>
                      <div {...flip15}>
                         <div className="flipper-card h-full">
-                           <div className="flipper-front bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0">
+                           <div className="flipper-front bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0 overflow-hidden">
                               <span className="text-lg font-gadugi text-center max-w-[70%] mx-auto text-white block">
                                  Deseja mudar alguns comportamentos ou hábitos, mas não está conseguindo
                               </span>
-                              <div className="absolute bottom-[10%] left-0 w-full flex justify-center">
+                              <div className="absolute -bottom-10 lg:bottom-[10%] left-0 w-full flex justify-center">
                                  <img
                                     src="/assets/img-benefits-15.png"
                                     alt="line-benefits-2"
-                                    className="w-full h-auto object-contain"
+                                    className="w-full object-contain"
                                  />
                               </div>
                            </div>
-                           <div className="flipper-back bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0">
+                           <div className="flipper-back bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0 overflow-hidden">
                               <span className="text-lg font-gadugi text-center max-w-[70%] mx-auto text-white block">
                                  Tem algum medo que te impede de fazer coisas que você gostaria
                               </span>
-                              <div className="absolute bottom-[10%] left-0 w-full flex justify-center">
+                              <div className="absolute -bottom-10 lg:bottom-[10%] left-0 w-full flex justify-center">
                                  <img
                                     src="/assets/img-benefits-15-back.png"
                                     alt="line-benefits-2"
