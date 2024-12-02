@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
                         <div className="flex flex-wrap justify-center md:justify-start items-center gap-2">
                            <span>Buscar ajuda é um</span>
                            <span>ato de</span>
-                           <span className="font-retro-signature text-[64px] leading-[0] -translate-y-2">coragem,</span>
+                           <span className="font-retro-signature text-[64px] leading-[0]">coragem,</span>
                            <span>e não um sinal</span>
                            <span>de fraqueza.</span>
                         </div>
