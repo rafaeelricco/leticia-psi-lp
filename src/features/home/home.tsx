@@ -1,10 +1,5 @@
 'use client'
 
-// import { AboutMe } from '@/features/home/components/about-me'
-// import { Approach } from '@/features/home/components/approach'
-// import { Benefits } from '@/features/home/components/benefits'
-// import { Services } from '@/features/home/components/services'
-
 import { Footer } from '@/features/home/components/footer'
 import { Hero } from '@/features/home/components/hero'
 import { Header } from '@/src/components/ui/header'
