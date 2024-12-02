@@ -42,6 +42,7 @@ export default function RootLayout({
       <html lang="pt-BR">
          <head>
             <link rel="preload" href="/fonts/Forum-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+            <link rel="preload" href="/fonts/RetroSignature.otf" as="font" type="font/otf" crossOrigin="anonymous" />
             <meta
                name="description"
                content="Psicóloga clínica especialista em Terapia Cognitivo Comportamental (TCC) com mais de 10 anos de experiência. Atendimento online personalizado, ético e acolhedor para ajudar você a alcançar bem-estar emocional."
