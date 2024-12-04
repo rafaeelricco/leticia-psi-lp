@@ -1,11 +1,12 @@
 import { ServicesBackground } from '@/src/components/icons/services'
+import { SECTIONS } from '@/src/lib/variables'
 
 import React from 'react'
 
 export const Services: React.FC = () => {
    return (
       <React.Fragment>
-         <div className="relative overflow-hidden w-full pt-12 md:pt-20 lg:pt-28 pb-56">
+         <div className="relative overflow-hidden w-full pt-12 md:pt-20 lg:pt-28 pb-56" id={SECTIONS.SERVICES}>
             <div className="flex flex-col items-center justify-center gap-4 container px-4 lg:px-0">
                <h1 className="text-3xl md:text-3xl lg:text-4xl text-center text-green font-thin font-forum tracking-tight">
                   O atendimento

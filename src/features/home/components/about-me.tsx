@@ -1,11 +1,12 @@
 import { Background, Title } from '@/src/components/icons/about-me'
+import { SECTIONS } from '@/src/lib/variables'
 
 import React from 'react'
 
 export const AboutMe: React.FC = () => {
    return (
       <React.Fragment>
-         <div className="relative bg-green overflow-hidden w-full pt-12 md:pt-8">
+         <div className="relative bg-green overflow-hidden w-full pt-12 md:pt-8" id={SECTIONS.ABOUT_ME}>
             <div className="flex flex-col md:flex-row items-center justify-between relative">
                <div className="w-full md:w-1/2 order-2 md:order-1">
                   <img src={'/assets/leticia-about-me-hero.png'} alt="Letícia" className="object-contain" />

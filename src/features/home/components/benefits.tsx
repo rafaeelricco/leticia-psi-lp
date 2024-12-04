@@ -1,5 +1,6 @@
 import { LineBenefits, Petal01, PetalSimple, WavyLine } from '@/src/components/icons/benefits'
 import { useFlipAnimation } from '@/src/hooks/useFlipAnimation'
+import { SECTIONS } from '@/src/lib/variables'
 
 import Image from 'next/image'
 import React from 'react'
@@ -43,7 +44,10 @@ export const Benefits: React.FC = () => {
 
    return (
       <React.Fragment>
-         <div className="relative overflow-hidden w-full -mt-12 pt-32 pb-12 container lg:px-[8vw]">
+         <div
+            className="relative overflow-hidden w-full -mt-12 pt-32 pb-12 container lg:px-[8vw]"
+            id={SECTIONS.BENEFITS}
+         >
             <div className="grid gap-4 w-full [&>*]:w-full">
                <div className="grid lg:grid-rows-[378px] lg:grid-cols-[2fr_1fr_1fr] gap-4 [&>*]:w-full">
                   <div className="bg-support06 rounded-3xl shadow h-full flex items-center justify-center px-12 lg:px-[6vw] relative overflow-hidden min-h-[254px] lg:min-h-0">

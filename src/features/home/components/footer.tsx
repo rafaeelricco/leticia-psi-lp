@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { FooterPattern, InstagramIcon, WhatsappIcon } from '@/src/components/icons/footer'
-import { VARS } from '@/src/lib/variables'
+import { SECTIONS, VARS } from '@/src/lib/variables'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -9,7 +9,10 @@ import Link from 'next/link'
 export const Footer: React.FC = () => {
    return (
       <React.Fragment>
-         <div className="relative bg-support06 overflow-hidden w-full h-full min-h-[224px] flex flex-col items-center justify-center py-16 md:py-8">
+         <div
+            className="relative bg-support06 overflow-hidden w-full h-full min-h-[224px] flex flex-col items-center justify-center py-16 md:py-8"
+            id={SECTIONS.FOOTER}
+         >
             <FooterPattern className="absolute inset-0 w-full h-full object-cover min-h-[224px]" />
             <div className="container z-10">
                <div className="grid md:grid-cols-2 items-center md:justify-between gap-6 md:gap-0">
