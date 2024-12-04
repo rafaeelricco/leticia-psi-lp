@@ -13,10 +13,19 @@ import Link from 'next/link'
 import React from 'react'
 
 const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
+   const [open, setOpen] = React.useState(false)
+
    const handleScrollTo = (scrollTo: string) => {
       const element = document.querySelector(scrollTo)
+      const isMobile = window.innerWidth < 768
+      const isBenefitsSection = scrollTo === `#${SECTIONS.BENEFITS}`
+
       if (element) {
-         element.scrollIntoView({ behavior: 'smooth', block: 'center' })
+         element.scrollIntoView({
+            behavior: 'smooth',
+            block: isMobile && isBenefitsSection ? 'start' : 'center'
+         })
+         setOpen(false)
       }
    }
 
@@ -132,7 +141,7 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
                   </Button>
                </Link>
                <div className="md:hidden">
-                  <Sheet>
+                  <Sheet open={open} onOpenChange={setOpen}>
                      <SheetTrigger asChild>
                         <button className="flex items-center justify-center" aria-label="Abrir menu">
                            <HamburgerIcon className="bg-green rounded-lg" />
