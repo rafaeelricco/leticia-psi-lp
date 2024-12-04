@@ -4,6 +4,7 @@ export const VARS = {
 }
 
 export const SECTIONS = {
+   HERO: 'hero',
    ABOUT_ME: 'about-me',
    APPROACH: 'approach',
    BENEFITS: 'benefits',

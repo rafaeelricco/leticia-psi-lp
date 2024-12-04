@@ -7,7 +7,7 @@ import { Separator } from '@/components/ui/separator'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import { cn } from '@/lib/utils'
-import { VARS } from '@/src/lib/variables'
+import { SECTIONS, VARS } from '@/src/lib/variables'
 
 import Link from 'next/link'
 import React from 'react'
@@ -16,7 +16,7 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
    const handleScrollTo = (scrollTo: string) => {
       const element = document.querySelector(scrollTo)
       if (element) {
-         element.scrollIntoView({ behavior: 'smooth' })
+         element.scrollIntoView({ behavior: 'smooth', block: 'center' })
       }
    }
 
@@ -24,36 +24,36 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
       {
          id: 1,
          label: 'Sobre mim',
-         tooltip: 'home',
          disabled: false,
-         scrollTo: '#hero',
+         tooltip: null,
+         scrollTo: `#${SECTIONS.ABOUT_ME}`,
          link: '/',
          external: false
       },
       {
          id: 2,
          label: 'O atendimento',
-         tooltip: 'why-buy-ucs',
          disabled: false,
-         scrollTo: '#why-buy-ucs',
+         tooltip: null,
+         scrollTo: `#${SECTIONS.SERVICES}`,
          link: '/',
          external: false
       },
       {
          id: 3,
          label: 'Abordagem',
-         tooltip: 'sustainability',
          disabled: false,
-         scrollTo: '#sustainability',
+         tooltip: null,
+         scrollTo: `#${SECTIONS.APPROACH}`,
          link: '/',
          external: false
       },
       {
          id: 4,
          label: 'Como sei de devo fazer terapia?',
-         tooltip: 'bank-of-amazonia',
          disabled: false,
-         scrollTo: '#bank-of-amazonia',
+         tooltip: null,
+         scrollTo: `#${SECTIONS.BENEFITS}`,
          link: '/',
          external: false
       }
@@ -68,35 +68,55 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
             )}
          >
             <div className="flex items-center justify-between w-full px-2.5 md:container sm:px-4 md:px-0 gap-4 sm:gap-10">
-               <Logo className="h-[32px] sm:h-[36px] min-w-[200px]" />
+               <Logo
+                  className="h-[32px] sm:h-[36px] min-w-[200px] cursor-pointer"
+                  onClick={() => handleScrollTo(`#${SECTIONS.HERO}`)}
+               />
                <div className="hidden md:grid grid-flow-col items-center gap-4 md:gap-6">
                   {items.map((item, index) => (
                      <React.Fragment key={item.id + index}>
                         <ul className="w-full flex items-center gap-2">
                            <li>
-                              <TooltipProvider>
-                                 <Tooltip>
-                                    <TooltipTrigger asChild>
-                                       <div>
-                                          {item.disabled ? (
-                                             <p className="font-gadugi text-white text-sm lg:text-base font-medium flex-shrink cursor-default opacity-50">
-                                                {item.label}
-                                             </p>
-                                          ) : (
-                                             <button
-                                                onClick={() => handleScrollTo(item.scrollTo)}
-                                                className="font-gadugi text-white hover:text-white/80 text-sm lg:text-base flex-shrink cursor-pointer hover:underline font-medium whitespace-nowrap"
-                                             >
-                                                {item.label}
-                                             </button>
-                                          )}
-                                       </div>
-                                    </TooltipTrigger>
-                                    <TooltipContent side="bottom">
-                                       <p className="font-gadugi text-base font-medium">{item.tooltip}</p>
-                                    </TooltipContent>
-                                 </Tooltip>
-                              </TooltipProvider>
+                              {item.tooltip ? (
+                                 <TooltipProvider>
+                                    <Tooltip>
+                                       <TooltipTrigger asChild>
+                                          <div>
+                                             {item.disabled ? (
+                                                <p className="font-gadugi text-white text-sm lg:text-base font-medium flex-shrink cursor-default opacity-50">
+                                                   {item.label}
+                                                </p>
+                                             ) : (
+                                                <button
+                                                   onClick={() => handleScrollTo(item.scrollTo)}
+                                                   className="font-gadugi text-white hover:text-white/80 text-sm lg:text-base flex-shrink cursor-pointer hover:underline font-medium whitespace-nowrap"
+                                                >
+                                                   {item.label}
+                                                </button>
+                                             )}
+                                          </div>
+                                       </TooltipTrigger>
+                                       <TooltipContent side="bottom">
+                                          <p className="font-gadugi text-base font-medium">{item.tooltip}</p>
+                                       </TooltipContent>
+                                    </Tooltip>
+                                 </TooltipProvider>
+                              ) : (
+                                 <div>
+                                    {item.disabled ? (
+                                       <p className="font-gadugi text-white text-sm lg:text-base font-medium flex-shrink cursor-default opacity-50">
+                                          {item.label}
+                                       </p>
+                                    ) : (
+                                       <button
+                                          onClick={() => handleScrollTo(item.scrollTo)}
+                                          className="font-gadugi text-white hover:text-white/80 text-sm lg:text-base flex-shrink cursor-pointer hover:underline font-medium whitespace-nowrap"
+                                       >
+                                          {item.label}
+                                       </button>
+                                    )}
+                                 </div>
+                              )}
                            </li>
                         </ul>
                         {index < items.length - 1 && <Separator orientation="vertical" className="h-4" />}
