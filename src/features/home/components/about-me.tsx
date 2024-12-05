@@ -19,7 +19,7 @@ export const AboutMe: React.FC = () => {
                      <Title className="mx-auto md:mx-0 w-[40%] md:w-[20vw]" />
                      <p className="hidden max-w-[85%] md:inline-flex flex-col gap-4 text-base lg:text-lg font-medium text-white text-center md:text-start md:max-w-[90%] font-gadugi">
                         <span>
-                           Sou psicóloga clínica (CRP 072459), formada há mais de dez anos e atualmente trabalho com
+                           Sou psicóloga clínica (CRP 0724591), formada há mais de dez anos e atualmente trabalho com
                            psicoterapia no formato online, tendo como abordagem a Terapia Cognitivo Comportamental
                            (TCC).
                         </span>
@@ -33,7 +33,7 @@ export const AboutMe: React.FC = () => {
                      </p>
                      <p className="inline-flex max-w-[85%] mx-auto flex-col gap-4 md:hidden text-center md:text-start text-sm sm:text-base font-medium text-white md:max-w-[90%] font-gadugi">
                         <span>
-                           Sou psicóloga clínica (CRP 072459), formada há mais de dez anos e atualmente trabalho com
+                           Sou psicóloga clínica (CRP 0724591), formada há mais de dez anos e atualmente trabalho com
                            psicoterapia no formato online, tendo como abordagem a Terapia Cognitivo Comportamental
                            (TCC).
                         </span>

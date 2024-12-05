@@ -6,7 +6,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
    metadataBase: new URL(`https://${process.env.VERCEL_URL}`),
-   title: 'Leticia Mathias | Psicóloga Clínica - Terapia Online (CRP 072459)',
+   title: 'Leticia Mathias | Psicóloga Clínica - Terapia Online (CRP 0724591)',
    description:
       'Psicóloga clínica com mais de 10 anos de experiência e especializanda em Terapia Cognitivo Comportamental (TCC). Atendimento online personalizado, ético e baseado em evidências científicas para ansiedade, depressão, autoestima e desenvolvimento pessoal.',
    authors: [{ name: 'Leticia Mathias' }],
@@ -29,20 +29,20 @@ export const metadata: Metadata = {
       'relacionamentos',
       'perfeccionismo',
       'gestão emocional',
-      'psicóloga CRP 072459',
+      'psicóloga CRP 0724591',
       'terapia individual'
    ],
    openGraph: {
-      title: 'Leticia Mathias | Psicóloga Clínica - Terapia Online (CRP 072459)',
+      title: 'Leticia Mathias | Psicóloga Clínica - Terapia Online (CRP 0724591)',
       description:
          'Atendimento psicológico online com abordagem em TCC. Psicóloga com mais de 10 anos de experiência, especializanda em TCC. Atendimento para ansiedade, depressão, autoestima e desenvolvimento pessoal. Sessões individualizadas e baseadas em evidências científicas.',
       type: 'website'
    },
    twitter: {
       card: 'summary_large_image',
-      title: 'Leticia Mathias | Psicóloga Clínica - Terapia Online (CRP 072459)',
+      title: 'Leticia Mathias | Psicóloga Clínica - Terapia Online (CRP 0724591)',
       description:
-         'Psicoterapia online com TCC. Atendimento psicológico por psicóloga com mais de 10 anos de experiência, especializanda em TCC (CRP 072459). Sessões focadas em ansiedade, depressão, autoestima e desenvolvimento pessoal.'
+         'Psicoterapia online com TCC. Atendimento psicológico por psicóloga com mais de 10 anos de experiência, especializanda em TCC (CRP 0724591). Sessões focadas em ansiedade, depressão, autoestima e desenvolvimento pessoal.'
    }
 }
 
