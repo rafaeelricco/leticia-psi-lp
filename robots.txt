@@ -1,0 +1,14 @@
+# robots.txt para leticiamathias.com.br
+
+# Permitir acesso para todos os crawlers
+User-agent: *
+Allow: /
+
+# Sitemap (recomendo criar também)
+Sitemap: https://leticiamathias.com.br/sitemap.xml
+
+# Diretórios e arquivos específicos para desallowed (opcional)
+Disallow: /api/
+Disallow: /_next/
+Disallow: /*/_*
+Disallow: /*?* 
