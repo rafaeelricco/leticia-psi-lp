@@ -2,6 +2,7 @@ import '@/styles/animation.css'
 import '@/styles/globals.css'
 import '@/styles/reset.css'
 
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -82,6 +83,7 @@ export default function RootLayout({
          </head>
          <body className="antialiased" aria-label="Página principal de Leticia Mathias, Psicóloga Clínica">
             <main role="main">{children}</main>
+            <SpeedInsights />
          </body>
       </html>
    )
