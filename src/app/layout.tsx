@@ -43,6 +43,20 @@ export const metadata: Metadata = {
       title: 'Leticia Mathias | Psicóloga Clínica - Terapia Online (CRP 0724591)',
       description:
          'Psicoterapia online com TCC. Atendimento psicológico por psicóloga com mais de 10 anos de experiência, especializanda em TCC (CRP 0724591). Sessões focadas em ansiedade, depressão, autoestima e desenvolvimento pessoal.'
+   },
+   alternates: {
+      canonical: 'https://www.leticiamathiaspsi.com.br/'
+   },
+   robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+         index: true,
+         follow: true,
+         'max-video-preview': -1,
+         'max-image-preview': 'large',
+         'max-snippet': -1
+      }
    }
 }
 
