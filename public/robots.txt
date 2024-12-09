@@ -5,7 +5,7 @@ User-agent: *
 Allow: /
 
 # Sitemap (recomendo criar também)
-Sitemap: https://leticiamathias.com.br/sitemap.xml
+Sitemap: https://www.leticiamathiaspsi.com.br/sitemap.xml
 
 # Diretórios e arquivos específicos para desallowed (opcional)
 Disallow: /api/
