@@ -64,7 +64,7 @@ export const Hero: React.FC = () => {
             width={0}
             height={0}
             sizes="100vw"
-            quality={80}
+            quality={50}
             placeholder="blur"
             className="absolute h-svh w-screen -z-10 object-cover md:object-top object-[75%_center]"
             role="img"
