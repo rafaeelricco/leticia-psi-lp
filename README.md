@@ -32,8 +32,8 @@ Certifique-se de ter instalado em sua máquina:
 Clone o repositório e acesse o diretório do projeto:
 
 ```bash
-git clone https://github.com/seu-usuario/leticia-mathias-website.git
-cd leticia-mathias-website
+git clone https://github.com/rafaeelricco/leticia-psi-lp.git
+cd leticia-psi-lp
 ```
 
 **c. Instalação das dependências**
