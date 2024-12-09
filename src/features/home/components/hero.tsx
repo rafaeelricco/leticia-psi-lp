@@ -64,7 +64,7 @@ export const Hero: React.FC = () => {
             width={0}
             height={0}
             sizes="100vw"
-            quality={80}
+            quality={50}
             placeholder="blur"
             className="absolute h-svh w-screen -z-10 object-cover md:object-top object-[75%_center]"
             role="img"
@@ -77,7 +77,6 @@ export const Hero: React.FC = () => {
                alt="Contatar via WhatsApp"
                width={54}
                height={54}
-               quality={100}
                className="fixed bottom-4 right-4 z-50 md:hidden cursor-pointer active:scale-110 transition-all duration-300"
                role="button"
                aria-label="Abrir chat do WhatsApp"
