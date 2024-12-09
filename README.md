@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <img src="https://res.cloudinary.com/dnqiosdb6/image/upload/v1733761584/leticia-psi-cover_jagt7o.png" alt="leticia-mathias-psicologa">
+</div>
 
-## Getting Started
+## Sobre o projeto
 
-First, run the development server:
+Esta é uma landing page profissional desenvolvida para Leticia Mathias, psicóloga clínica especializanda em Terapia Cognitivo-Comportamental (TCC). O projeto foi construído com foco em performance, SEO e experiência do usuário, utilizando tecnologias modernas para garantir uma presença online eficaz e profissional.
+
+A plataforma foi desenvolvida com os seguintes objetivos principais:
+
+-  Apresentação profissional e acolhedora da psicóloga e seus serviços
+-  Otimização para mecanismos de busca (SEO)
+-  Interface responsiva e adaptável para diferentes dispositivos
+-  Integração com WhatsApp para agendamentos
+-  Performance otimizada seguindo as métricas do [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview?hl=pt-br#:~:text=O%20Lighthouse%20%C3%A9%20uma%20ferramenta,Apps%2C%20SEO%20e%20muito%20mais.)
+-  Design minimalista e intuitivo focado na experiência do usuário
+
+## Configuração do ambiente
+
+### 1. Pré-requisitos
+
+**a. Instalação de dependências**
+
+Certifique-se de ter instalado em sua máquina:
+
+-  Node.js (versão 18 ou superior)
+-  PNPM (versão 8 ou superior)
+-  Git
+
+**b. Clone do repositório**
+
+Clone o repositório e acesse o diretório do projeto:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/seu-usuario/leticia-mathias-website.git
+cd leticia-mathias-website
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**c. Instalação das dependências**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Instale todas as dependências do projeto utilizando o PNPM:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm i
+```
 
-## Learn More
+### 2. Executando o projeto
 
-To learn more about Next.js, take a look at the following resources:
+**a. Ambiente de desenvolvimento**
 
--  [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--  [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Inicie o servidor de desenvolvimento:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+pnpm dev
+```
 
-## Deploy on Vercel
+O aplicativo estará disponível em [http://localhost:3000](http://localhost:3000)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**b. Ambiente de produção**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Para build de produção:
+
+```bash
+pnpm build && pnpm start
+```
+
+## Licença
+
+Todos os direitos reservados © 2024 Leticia Mathias
