@@ -49,6 +49,7 @@ export const Footer: React.FC = () => {
                      </div>
                   </div>
                   <Image
+                     priority={false}
                      src="/assets/leticia-psi-logo.png"
                      alt="Letícia Mathias - Logo"
                      width={0}

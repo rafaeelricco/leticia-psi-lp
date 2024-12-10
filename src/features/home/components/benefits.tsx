@@ -56,6 +56,7 @@ export const Benefits: React.FC = () => {
                      </span>
                      <div className="absolute bottom-0 left-0 w-full">
                         <Image
+                           priority={false}
                            src="/assets/line-benefits-1.png"
                            alt="line-benefits-1"
                            width={0}
@@ -74,6 +75,7 @@ export const Benefits: React.FC = () => {
                            </span>
                            <div className="absolute -bottom-0.5 -rotate-[4deg] left-0 w-full">
                               <Image
+                                 priority={false}
                                  src="/assets/line-benefits-2.png"
                                  alt="line-benefits-2"
                                  width={0}
@@ -93,6 +95,7 @@ export const Benefits: React.FC = () => {
                            </span>
                            <div className="absolute lg:top-1/2 left-0 w-full">
                               <Image
+                                 priority={false}
                                  src="/assets/img-benefits-5.png"
                                  alt="img-benefits-5"
                                  width={0}
@@ -112,6 +115,7 @@ export const Benefits: React.FC = () => {
                         <div className="flipper-card h-full">
                            <div className="flipper-front bg-support06 rounded-3xl shadow h-full overflow-hidden">
                               <Image
+                                 priority={false}
                                  src="/assets/img-benefits-3.png"
                                  alt="line-benefits-2"
                                  width={0}
@@ -131,6 +135,7 @@ export const Benefits: React.FC = () => {
                         <div className="flipper-card h-full">
                            <div className="flipper-front bg-support06 rounded-3xl shadow h-full overflow-hidden">
                               <Image
+                                 priority={false}
                                  src="/assets/img-benefits-4.png"
                                  alt="line-benefits-2"
                                  width={0}
@@ -155,6 +160,7 @@ export const Benefits: React.FC = () => {
                            <div className="flipper-front bg-support06 rounded-3xl shadow h-full">
                               <div className="flipper-front bg-support06 rounded-3xl shadow h-full overflow-hidden">
                                  <Image
+                                    priority={false}
                                     src="/assets/img-benefits-6.png"
                                     alt="line-benefits-2"
                                     width={0}
@@ -176,6 +182,7 @@ export const Benefits: React.FC = () => {
                            <div className="flipper-card h-full">
                               <div className="flipper-front bg-support06 rounded-3xl shadow h-full overflow-hidden">
                                  <Image
+                                    priority={false}
                                     src="/assets/img-benefits-7.png"
                                     alt="line-benefits-2"
                                     width={0}
@@ -215,6 +222,7 @@ export const Benefits: React.FC = () => {
                            </div>
                            <div className="flipper-back bg-primary rounded-3xl shadow h-full overflow-hidden">
                               <Image
+                                 priority={false}
                                  src="/assets/img-benefits-8.png"
                                  alt="line-benefits-2"
                                  width={0}
@@ -236,6 +244,7 @@ export const Benefits: React.FC = () => {
                            </div>
                            <div className="flipper-back bg-primary h-full rounded-3xl shadow min-h-[100px] lg:min-h-0 overflow-hidden">
                               <Image
+                                 priority={false}
                                  src="/assets/img-benefits-9.png"
                                  alt="line-benefits-2"
                                  width={0}
@@ -250,6 +259,7 @@ export const Benefits: React.FC = () => {
                         <div className="flipper-card h-full">
                            <div className="flipper-front bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0 overflow-hidden">
                               <Image
+                                 priority={false}
                                  src="/assets/line-benefits-10.png"
                                  alt="line-benefits-2"
                                  width={0}
@@ -271,6 +281,7 @@ export const Benefits: React.FC = () => {
                         <div className="flipper-card h-full">
                            <div className="flipper-front bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0 overflow-hidden">
                               <Image
+                                 priority={false}
                                  src="/assets/img-benefits-10.png"
                                  alt="line-benefits-2"
                                  width={0}
@@ -281,6 +292,7 @@ export const Benefits: React.FC = () => {
                            </div>
                            <div className="flipper-back bg-primary h-full rounded-3xl shadow min-h-[100px] lg:min-h-0 overflow-hidden">
                               <Image
+                                 priority={false}
                                  src="/assets/img-benefits-11.png"
                                  alt="line-benefits-2"
                                  width={0}
@@ -303,6 +315,7 @@ export const Benefits: React.FC = () => {
                               </div>
                               <div className="flipper-back bg-support06 h-full rounded-3xl shadow min-h-[100px] lg:min-h-0 overflow-hidden">
                                  <Image
+                                    priority={false}
                                     src="/assets/img-benefits-13.png"
                                     alt="line-benefits-2"
                                     width={0}
@@ -336,6 +349,7 @@ export const Benefits: React.FC = () => {
                               </span>
                               <div className="absolute -bottom-10 lg:bottom-[10%] left-0 w-full flex justify-center">
                                  <Image
+                                    priority={false}
                                     src="/assets/img-benefits-15.png"
                                     alt="line-benefits-2"
                                     width={0}
@@ -351,6 +365,7 @@ export const Benefits: React.FC = () => {
                               </span>
                               <div className="absolute -bottom-10 lg:bottom-[10%] left-0 w-full flex justify-center">
                                  <Image
+                                    priority={false}
                                     src="/assets/img-benefits-15-back.png"
                                     alt="line-benefits-2"
                                     width={0}
@@ -369,6 +384,7 @@ export const Benefits: React.FC = () => {
                      <div className="flipper-card h-full">
                         <div className="flipper-front bg-support06 rounded-3xl shadow h-full overflow-hidden">
                            <Image
+                              priority={false}
                               src="/assets/img-benefits-16.png"
                               alt="line-benefits-2"
                               width={0}
@@ -384,6 +400,7 @@ export const Benefits: React.FC = () => {
                               </span>
                               <div className="absolute bottom-0 -right-1/4 w-full flex justify-center">
                                  <Image
+                                    priority={false}
                                     src="/assets/line-benefits-10-back.png"
                                     alt="line-benefits-2"
                                     width={0}
@@ -414,6 +431,7 @@ export const Benefits: React.FC = () => {
                      <div className="flipper-card h-full">
                         <div className="flipper-front bg-support06 rounded-3xl shadow h-full overflow-hidden">
                            <Image
+                              priority={false}
                               src="/assets/img-benefits-18.png"
                               alt="line-benefits-2"
                               width={0}
@@ -424,6 +442,7 @@ export const Benefits: React.FC = () => {
                         </div>
                         <div className="flipper-back bg-primary rounded-3xl shadow h-full overflow-hidden">
                            <Image
+                              priority={false}
                               src="/assets/img-benefits-18-back.png"
                               alt="line-benefits-2"
                               width={0}

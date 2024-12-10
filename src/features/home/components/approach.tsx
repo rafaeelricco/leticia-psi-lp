@@ -2,6 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { ApproachBackground } from '@/src/components/icons/approach'
 import { SECTIONS } from '@/src/lib/variables'
 
+import Image from 'next/image'
 import React from 'react'
 
 export const Approach: React.FC = () => {
@@ -39,10 +40,16 @@ export const Approach: React.FC = () => {
                   </div>
                </div>
             </div>
-            <img
+            <Image
+               priority={false}
                src={'/assets/pattern-frame.png'}
-               alt=""
+               alt="Letícia Mathias - Psicóloga Clínica especialista em Terapia Cognitivo Comportamental"
+               width={0}
+               height={0}
+               sizes="100vw"
+               quality={10}
                className="object-contain h-full absolute py-12 left-0 top-0 -z-10"
+               role="img"
             />
             <ApproachBackground className="w-full py-12 h-full absolute top-0 left-0 -z-20" />
          </div>
