@@ -8,11 +8,16 @@ const nextConfig: NextConfig = {
       minimumCacheTTL: 60
    },
    experimental: {
+      turbo: {
+         minify: true,
+         useSwcCss: true
+      },
       serverMinification: true,
       optimizeCss: true,
       optimizePackageImports: ['@radix-ui/react-accordion', '@radix-ui/react-dialog'],
       optimizeServerReact: true
    },
+   compress: true,
    headers: async () => [
       {
          source: '/fonts/:path*',

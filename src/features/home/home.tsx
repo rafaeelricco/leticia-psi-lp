@@ -1,11 +1,11 @@
 'use client'
 
-import { Footer } from '@/features/home/components/footer'
 import { Hero } from '@/features/home/components/hero'
-import { Header } from '@/src/components/ui/header'
 
 import dynamic from 'next/dynamic'
 import React from 'react'
+
+const Header = dynamic(() => import('@/src/components/ui/header').then((mod) => mod.Header), { ssr: false })
 
 const AboutMe = dynamic(() => import('@/features/home/components/about-me').then((mod) => mod.AboutMe), { ssr: false })
 
@@ -21,16 +21,24 @@ const Benefits = dynamic(() => import('@/features/home/components/benefits').the
    ssr: true
 })
 
+const Footer = dynamic(() => import('@/features/home/components/footer').then((mod) => mod.Footer), {
+   ssr: false
+})
+
 export const HomePageComponent: React.FC = () => {
    return (
-      <React.Suspense>
-         <Header />
+      <React.Fragment>
+         <React.Suspense>
+            <Header />
+         </React.Suspense>
          <Hero />
-         <AboutMe />
-         <Services />
-         <Approach />
-         <Benefits />
-         <Footer />
-      </React.Suspense>
+         <React.Suspense>
+            <AboutMe />
+            <Services />
+            <Approach />
+            <Benefits />
+            <Footer />
+         </React.Suspense>
+      </React.Fragment>
    )
 }

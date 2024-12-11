@@ -9,6 +9,7 @@ const config: Config = {
       './src/app/**/*.{js,ts,jsx,tsx,mdx}',
       './src/features/**/*.{js,ts,jsx,tsx,mdx}'
    ],
+   mode: 'jit',
    theme: {
       extend: {
          container: {

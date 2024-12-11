@@ -2,7 +2,6 @@ import { WhatsAppIcon } from '@/src/components/icons/hero'
 import { Button } from '@/src/components/ui/button'
 import { VARS } from '@/src/lib/variables'
 
-import HeroImage from '@/public/assets/leticia-psi-hero.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -58,25 +57,24 @@ export const Hero: React.FC = () => {
             </div>
          </div>
          <Image
-            src={HeroImage}
+            src="/assets/leticia-psi-hero.png"
             alt="Letícia Mathias - Psicóloga Clínica especialista em Terapia Cognitivo Comportamental"
             priority
             width={0}
             height={0}
             quality={80}
             sizes="100vw"
-            placeholder="blur"
             className="absolute h-svh w-screen -z-10 object-cover md:object-top object-[75%_center]"
             role="img"
          />
          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent -z-[5] md:hidden" />
          <Link prefetch={false} href={VARS.WHATSAPP_LINK} target="_blank" aria-label="whatsapp">
             <Image
-               priority
                src="/assets/whatsapp-icon.png"
                alt="Contatar via WhatsApp"
                width={54}
                height={54}
+               quality={80}
                className="fixed bottom-4 right-4 z-50 md:hidden cursor-pointer active:scale-110 transition-all duration-300"
                role="button"
                aria-label="Abrir chat do WhatsApp"
