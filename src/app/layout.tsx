@@ -2,8 +2,62 @@ import '@/styles/animation.css'
 import '@/styles/globals.css'
 import '@/styles/reset.css'
 
+import { cn } from '@/lib/utils'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Metadata } from 'next'
+
+import localFont from 'next/font/local'
+
+const forum = localFont({
+   src: '../../public/fonts/Forum-Regular.ttf',
+   variable: '--font-forum',
+   display: 'swap'
+})
+
+const gadugi = localFont({
+   src: [
+      {
+         path: '../../public/fonts/Gadugi/gadugi-normal.ttf',
+         weight: '400',
+         style: 'normal'
+      },
+      {
+         path: '../../public/fonts/Gadugi/gadugi-bold.ttf',
+         weight: '700',
+         style: 'normal'
+      }
+   ],
+   variable: '--font-gadugi',
+   display: 'swap'
+})
+
+const notoSerifOriya = localFont({
+   src: [
+      {
+         path: '../../public/fonts/NotoSerifOriya/NotoSerifOriya-Regular.ttf',
+         weight: '400',
+         style: 'normal'
+      },
+      {
+         path: '../../public/fonts/NotoSerifOriya/NotoSerifOriya-Medium.ttf',
+         weight: '500',
+         style: 'normal'
+      },
+      {
+         path: '../../public/fonts/NotoSerifOriya/NotoSerifOriya-SemiBold.ttf',
+         weight: '600',
+         style: 'normal'
+      }
+   ],
+   variable: '--font-noto-serif-oriya',
+   display: 'swap'
+})
+
+const retroSignature = localFont({
+   src: '../../public/fonts/RetroSignature.otf',
+   variable: '--font-retro-signature',
+   display: 'swap'
+})
 
 export const metadata: Metadata = {
    metadataBase: new URL(`https://${process.env.VERCEL_URL}`),
@@ -67,17 +121,11 @@ export default function RootLayout({
    children: React.ReactNode
 }>) {
    return (
-      <html lang="pt-BR">
+      <html
+         lang="pt-BR"
+         className={cn(forum.variable, gadugi.variable, notoSerifOriya.variable, retroSignature.variable)}
+      >
          <head>
-            <link rel="preload" href="/fonts/Forum-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
-            <link
-               rel="preload"
-               href="/fonts/RetroSignature.otf"
-               as="font"
-               type="font/otf"
-               crossOrigin="anonymous"
-               fetchPriority="high"
-            />
             <meta
                name="description"
                content="Psicóloga clínica especialista em Terapia Cognitivo Comportamental (TCC) com mais de 10 anos de experiência. Atendimento online personalizado, ético e acolhedor para ajudar você a alcançar bem-estar emocional."

@@ -31,10 +31,10 @@ const config: Config = {
             }
          },
          fontFamily: {
-            forum: ['Forum', 'sans-serif'],
-            gadugi: ['Gadugi', 'sans-serif'],
-            'noto-serif-oriya': ['Noto Serif Oriya', 'serif'],
-            'retro-signature': ['Retro Signature', 'cursive']
+            forum: ['var(--font-forum)', 'sans-serif'],
+            gadugi: ['var(--font-gadugi)', 'sans-serif'],
+            'noto-serif-oriya': ['var(--font-noto-serif-oriya)', 'serif'],
+            'retro-signature': ['var(--font-retro-signature)', 'cursive']
          },
          colors: {
             primary: '#A9C091',
