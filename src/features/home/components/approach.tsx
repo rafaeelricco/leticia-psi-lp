@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { ApproachBackground } from '@/src/components/icons/approach'
 import { SECTIONS } from '@/src/lib/variables'
 
@@ -12,7 +12,15 @@ export const Approach: React.FC = () => {
             <div className="flex flex-col items-center justify-center gap-4 container">
                <div className="lg:w-[700px] rounded-[32px] lg:rounded-[64px] border border-white bg-gradient-to-b from-[#677855cc] via-[#859970] via-[7%] to-[#A9C191] px-6 py-8 lg:px-20 pt-24 relative lg:-ml-[40%]">
                   <Avatar className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-28 h-28 lg:w-40 lg:h-40 border-8 border-white">
-                     <AvatarImage src="/assets/leticia-avatar.png" alt="Foto de perfil da Letícia" />
+                     <Image
+                        alt=""
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        priority={false}
+                        className="w-full h-full object-cover"
+                        src="/assets/leticia-avatar.png"
+                     />
                      <AvatarFallback>LM</AvatarFallback>
                   </Avatar>
                   <div className="flex flex-col gap-4">
