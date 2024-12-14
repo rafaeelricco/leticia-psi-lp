@@ -11,7 +11,9 @@ import localFont from 'next/font/local'
 const forum = localFont({
    src: '../../public/fonts/Forum-Regular.ttf',
    variable: '--font-forum',
-   display: 'swap'
+   display: 'swap',
+   preload: true,
+   fallback: ['sans-serif']
 })
 
 const gadugi = localFont({
@@ -28,7 +30,9 @@ const gadugi = localFont({
       }
    ],
    variable: '--font-gadugi',
-   display: 'swap'
+   display: 'swap',
+   preload: true,
+   fallback: ['sans-serif']
 })
 
 const notoSerifOriya = localFont({
@@ -50,13 +54,17 @@ const notoSerifOriya = localFont({
       }
    ],
    variable: '--font-noto-serif-oriya',
-   display: 'swap'
+   display: 'swap',
+   preload: true,
+   fallback: ['serif']
 })
 
 const retroSignature = localFont({
    src: '../../public/fonts/RetroSignature.otf',
    variable: '--font-retro-signature',
-   display: 'swap'
+   display: 'swap',
+   preload: true,
+   fallback: ['cursive']
 })
 
 export const metadata: Metadata = {

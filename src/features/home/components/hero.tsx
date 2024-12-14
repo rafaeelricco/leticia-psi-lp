@@ -60,8 +60,8 @@ export const Hero: React.FC = () => {
             src="/assets/leticia-psi-hero.png"
             alt="Letícia Mathias - Psicóloga Clínica especialista em Terapia Cognitivo Comportamental"
             priority
-            width={0}
-            height={0}
+            width={1920}
+            height={1080}
             quality={80}
             sizes="100vw"
             className="absolute h-svh w-screen -z-10 object-cover md:object-top object-[75%_center]"
