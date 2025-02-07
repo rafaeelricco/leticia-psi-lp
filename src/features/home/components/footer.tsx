@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 import { FooterPattern, InstagramIcon, WhatsappIcon } from '@/src/components/icons/footer'
+import { handleWhatsAppClick } from '@/src/lib/gtag'
 import { SECTIONS, VARS } from '@/src/lib/variables'
 
 import Image from 'next/image'
@@ -30,7 +31,13 @@ export const Footer: React.FC = () => {
                         </div>
                      </h1>
                      <div className="flex items-center justify-center md:justify-start gap-4">
-                        <Link prefetch={false} href={VARS.WHATSAPP_LINK} target="_blank" aria-label="whatsapp">
+                        <Link
+                           prefetch={false}
+                           href={VARS.WHATSAPP_LINK}
+                           target="_blank"
+                           aria-label="whatsapp"
+                           onClick={() => handleWhatsAppClick()}
+                        >
                            <div className="flex items-center gap-2">
                               <WhatsappIcon className="w-6 h-6 md:w-8 md:h-8" />
                               <span className="text-base font-gadugi text-white hover:underline cursor-pointer">

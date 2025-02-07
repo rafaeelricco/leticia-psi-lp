@@ -7,6 +7,7 @@ import { Separator } from '@/components/ui/separator'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import { cn } from '@/lib/utils'
+import { handleWhatsAppClick } from '@/src/lib/gtag'
 import { SECTIONS, VARS } from '@/src/lib/variables'
 
 import Link from 'next/link'
@@ -132,7 +133,13 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
                      </React.Fragment>
                   ))}
                </div>
-               <Link prefetch={false} href={VARS.WHATSAPP_LINK} target="_blank" aria-label="whatsapp">
+               <Link
+                  prefetch={false}
+                  href={VARS.WHATSAPP_LINK}
+                  target="_blank"
+                  aria-label="whatsapp"
+                  onClick={() => handleWhatsAppClick()}
+               >
                   <Button variant="default" className="w-full sm:w-auto hidden lg:block">
                      <span className="flex items-center gap-2">
                         <WhatsAppIcon className="w-4 h-4" />
@@ -165,7 +172,13 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
                                  </React.Fragment>
                               ))}
                            </div>
-                           <Link prefetch={false} href={VARS.WHATSAPP_LINK} target="_blank" aria-label="whatsapp">
+                           <Link
+                              prefetch={false}
+                              href={VARS.WHATSAPP_LINK}
+                              target="_blank"
+                              aria-label="whatsapp"
+                              onClick={() => handleWhatsAppClick()}
+                           >
                               <Button variant="default" className="w-full mt-4">
                                  <span className="flex items-center gap-2">
                                     <WhatsAppIcon className="w-4 h-4" />

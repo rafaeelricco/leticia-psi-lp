@@ -5,6 +5,7 @@ import '@/styles/reset.css'
 import { cn } from '@/lib/utils'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Metadata } from 'next'
+import Script from 'next/script'
 
 import localFont from 'next/font/local'
 
@@ -136,17 +137,31 @@ export default function RootLayout({
       <html
          lang="pt-BR"
          className={cn(forum.variable, gadugi.variable, notoSerifOriya.variable, retroSignature.variable)}
+         suppressHydrationWarning
       >
          <head>
             <meta
                name="description"
-               content="Psicóloga clínica especialista em Terapia Cognitivo Comportamental (TCC) com mais de 10 anos de experiência. Atendimento online personalizado, ético e acolhedor para ajudar você a alcançar bem-estar emocional."
+               content="Psicóloga clínica especializanda em Terapia Cognitivo Comportamental (TCC) com mais de 10 anos de experiência. Atendimento online personalizado, ético e acolhedor para ajudar você a alcançar bem-estar emocional."
             />
             <meta
                name="keywords"
                content="psicóloga online, terapia online, psicoterapia, TCC, Terapia Cognitivo Comportamental, psicóloga São Paulo, atendimento psicológico"
             />
             <meta name="author" content="Leticia Mathias" />
+            <Script strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=AW-16849677199`} />
+            <Script
+               id="google-analytics"
+               strategy="afterInteractive"
+               dangerouslySetInnerHTML={{
+                  __html: `
+                     window.dataLayer = window.dataLayer || [];
+                     function gtag(){dataLayer.push(arguments);}
+                     gtag('js', new Date());
+                     gtag('config', 'AW-16849677199');
+                  `
+               }}
+            />
          </head>
          <body className="antialiased" aria-label="Página principal de Leticia Mathias, Psicóloga Clínica">
             <main role="main">{children}</main>

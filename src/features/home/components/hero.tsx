@@ -1,5 +1,6 @@
 import { WhatsAppIcon } from '@/src/components/icons/hero'
 import { Button } from '@/src/components/ui/button'
+import { handleWhatsAppClick } from '@/src/lib/gtag'
 import { VARS } from '@/src/lib/variables'
 
 import Image from 'next/image'
@@ -41,6 +42,7 @@ export const Hero: React.FC = () => {
                      target="_blank"
                      aria-label="whatsapp"
                      className="w-fit grid"
+                     onClick={() => handleWhatsAppClick()}
                   >
                      <Button
                         variant="default"
@@ -68,7 +70,13 @@ export const Hero: React.FC = () => {
             role="img"
          />
          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent -z-[5] md:hidden" />
-         <Link prefetch={false} href={VARS.WHATSAPP_LINK} target="_blank" aria-label="whatsapp">
+         <Link
+            prefetch={false}
+            href={VARS.WHATSAPP_LINK}
+            target="_blank"
+            aria-label="whatsapp"
+            onClick={() => handleWhatsAppClick()}
+         >
             <Image
                src="/assets/whatsapp-icon.png"
                alt="Contatar via WhatsApp"
