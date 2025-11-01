@@ -60,7 +60,7 @@ const Header: React.FC<HeaderProps> = ({ className }: HeaderProps) => {
       },
       {
          id: 4,
-         label: 'Como sei de devo fazer terapia?',
+         label: 'Como sei se devo fazer terapia?',
          disabled: false,
          tooltip: null,
          scrollTo: `#${SECTIONS.BENEFITS}`,
